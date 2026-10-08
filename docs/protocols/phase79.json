@@ -1,0 +1,236 @@
+{
+  "locked_utc": "2026-10-06T02:52:35.760191+00:00",
+  "scope": "Posthoc bounded amplitude controls, afterphase78 sourceharm andexternalbenefit; no target-tuned thresholds",
+  "source_reference_subjects": [
+    0,
+    1,
+    2,
+    10,
+    11,
+    20,
+    21,
+    30,
+    31,
+    32
+  ],
+  "source_reference_stats": [
+    {
+      "subject": 0,
+      "windows": 2650,
+      "median_rms": 0.1896007583490798,
+      "quantiles": [
+        0.09172847511804982,
+        0.1896007583490798,
+        0.2973731496062402
+      ]
+    },
+    {
+      "subject": 1,
+      "windows": 2802,
+      "median_rms": 0.2032480724336479,
+      "quantiles": [
+        0.07431414239944183,
+        0.2032480724336479,
+        0.3159122036700609
+      ]
+    },
+    {
+      "subject": 2,
+      "windows": 2804,
+      "median_rms": 0.15491006800461188,
+      "quantiles": [
+        0.07258616381846292,
+        0.15491006800461188,
+        0.23698102537199486
+      ]
+    },
+    {
+      "subject": 10,
+      "windows": 2720,
+      "median_rms": 0.130339128152955,
+      "quantiles": [
+        0.06304687689182918,
+        0.130339128152955,
+        0.23963149188555166
+      ]
+    },
+    {
+      "subject": 11,
+      "windows": 2642,
+      "median_rms": 0.2435570782812643,
+      "quantiles": [
+        0.11712141887031857,
+        0.2435570782812643,
+        0.47761082398738974
+      ]
+    },
+    {
+      "subject": 20,
+      "windows": 2804,
+      "median_rms": 0.204539872240744,
+      "quantiles": [
+        0.0776210901138628,
+        0.204539872240744,
+        0.6916357570916133
+      ]
+    },
+    {
+      "subject": 21,
+      "windows": 2810,
+      "median_rms": 0.19591919723708576,
+      "quantiles": [
+        0.060830493749894556,
+        0.19591919723708576,
+        0.3267517119362984
+      ]
+    },
+    {
+      "subject": 30,
+      "windows": 2646,
+      "median_rms": 0.1873421239716528,
+      "quantiles": [
+        0.07375217110378152,
+        0.1873421239716528,
+        0.4092694850264965
+      ]
+    },
+    {
+      "subject": 31,
+      "windows": 2670,
+      "median_rms": 0.1745990911297025,
+      "quantiles": [
+        0.08025495559981163,
+        0.1745990911297025,
+        0.3044101465640841
+      ]
+    },
+    {
+      "subject": 32,
+      "windows": 2690,
+      "median_rms": 0.10336391073574877,
+      "quantiles": [
+        0.05235082865971025,
+        0.10336391073574877,
+        0.19628252289321424
+      ]
+    }
+  ],
+  "source_reference_rms": 0.1884714411603663,
+  "reference_rule": "median of perperson median perwindow joint2channel RMS, physical/100uV input before model filtering; no classlabel reads",
+  "normalizers": {
+    "guarded_median": "guarded_median",
+    "floor": "floor"
+  },
+  "normalizer": "Use causal logEMA.01 amplitude estimate. guarded_median: gain1 if estimate>=source1%bound, else source_median/estimate. floor: gain=max(1,source1%bound/estimate). Both gains clipped[1,100], output+-20; flatwindows unchanged. No calibration inside source range.",
+  "flat_rule": "rms<1e-6 use gain1, do not update estimate",
+  "state": "one scalar logRMS perrecord plusinitializedflag, reset onrecordboundary; allmodelparameters/buffersfrozen",
+  "source_validation": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "external_participants": [
+    "sub-III001",
+    "sub-III002",
+    "sub-III003",
+    "sub-III004",
+    "sub-III005",
+    "sub-III006",
+    "sub-III007",
+    "sub-III008",
+    "sub-III009",
+    "sub-III010"
+  ],
+  "montages": [
+    "left",
+    "right"
+  ],
+  "models": [
+    {
+      "model": "cbramod",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+      "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+    },
+    {
+      "model": "labram",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase21/mixed_pretrained_0.0001/model.pt",
+      "sha256": "2f9b09c60412bb93c25a1a6b38b768a9e6e5c9ded8f10e0ef4ed2749c996b8b5"
+    },
+    {
+      "model": "context11",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_17/model.pt",
+      "sha256": "69373f7f861eaf4971edd21acba7757cf80620fbdfe77dadbf8d5edc987d473c"
+    },
+    {
+      "model": "cbramod",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+      "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+    },
+    {
+      "model": "labram",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_0.0001_seed29/model.pt",
+      "sha256": "74b75e563970cb433e526e73f05dc8849ab7c5bee1ea5760314d95eda6194784"
+    },
+    {
+      "model": "context11",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_29/model.pt",
+      "sha256": "703356383ff75c857a93296597f4751b7b40e0536e61c8284d4aaf586e145484"
+    },
+    {
+      "model": "cbramod",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+      "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+    },
+    {
+      "model": "labram",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_2e-05_seed43/model.pt",
+      "sha256": "58442d8f92d5851942bfea559d82fd20a7cf27bb3db1e4e02209d4c43ea2b85e"
+    },
+    {
+      "model": "context11",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_43/model.pt",
+      "sha256": "52358332312190f3d250422d8a78e303a2989719193a6ef38d6d8f0ba0f4a74b"
+    },
+    {
+      "model": "relative",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase4/results/relative_mixed_17/model.pt",
+      "sha256": "5c817fd029cf0c83ba12d68763e2775f224ba72579f7c43122b4081203464285"
+    },
+    {
+      "model": "relative",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase4/results/relative_mixed_29/model.pt",
+      "sha256": "3867b34456570fd18df8bd3c9aea46f781ae65aad1e3ece987cc10f701709373"
+    },
+    {
+      "model": "relative",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase4/results/relative_mixed_43/model.pt",
+      "sha256": "bc25d27135b48439014d6562cbdd0f414c5203044b8934bf8a96a0fdd3ad890d"
+    }
+  ],
+  "ema": [
+    1,
+    0.8,
+    0.5
+  ],
+  "primary_diagnostic": "guarded_median vsraw atsameEMA.5, allthreecarriers, source4 andexternal10; floor fixedmechanismcontrol; no model/thresholdselectionfromtargetlabels",
+  "relative_reference": "Existing26dim relativepower+difference source-trained baseline, rawonly; no newheadtraining",
+  "no_target_labels_in_normalizer": true,
+  "extra_training_labels": 0,
+  "source_only_reference": true,
+  "lower_source_rms_quantile": 0.07307145993755997,
+  "lower_quantile_probability": 0.01,
+  "quantile_rule": "weighted lower empirical inverse CDF of causal logEMA.01 state, equalperson weights; source10 signals only"
+}

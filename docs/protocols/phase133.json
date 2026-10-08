@@ -1,0 +1,108 @@
+{
+  "cases": [
+    {
+      "case": {
+        "domain": "source",
+        "subject": "s05",
+        "montage": "native",
+        "x": "<PROJECT_ROOT>/data/processed/s05_x.npy",
+        "labels": "<PROJECT_ROOT>/data/processed/s05_meta.npz"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "healthy",
+        "subject": "sub-III001",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "healthy",
+        "subject": "sub-III001",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+      },
+      "mode": "full"
+    },
+    {
+      "case": {
+        "domain": "patient",
+        "subject": "sub-I021",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "patient",
+        "subject": "sub-I021",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+      },
+      "mode": "full"
+    }
+  ],
+  "parents": [
+    {
+      "model": "cbramod",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+      "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+    },
+    {
+      "model": "labram",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase21/mixed_pretrained_0.0001/model.pt",
+      "sha256": "2f9b09c60412bb93c25a1a6b38b768a9e6e5c9ded8f10e0ef4ed2749c996b8b5"
+    },
+    {
+      "model": "cbramod",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+      "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+    },
+    {
+      "model": "labram",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_0.0001_seed29/model.pt",
+      "sha256": "74b75e563970cb433e526e73f05dc8849ab7c5bee1ea5760314d95eda6194784"
+    },
+    {
+      "model": "cbramod",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+      "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+    },
+    {
+      "model": "labram",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_2e-05_seed43/model.pt",
+      "sha256": "58442d8f92d5851942bfea559d82fd20a7cf27bb3db1e4e02209d4c43ea2b85e"
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "heads": "Original source selected phase119 CBr and phase121 LaBraM history11",
+  "ema": 0.5,
+  "unit": "One already completed normalized two-lead 30second float32 2x3000 window; starts after EDF channel subtraction/resampling/centering/scaling. Not rawEDF acquisition validation.",
+  "checks": "Full records, one-window normalization/filtering/encoder/readout/EMA; cached batch gold only for comparison. Mid-record joint JSON resume and reset first16 steps bitwise. No labels or target updates.",
+  "tolerance_probability": 2e-05,
+  "scope": "Three fixed records chosen by first identifier within source, healthy and oldpatient cohorts, no outcome selection. Timing includes waveform preprocessing, GPU parent and CPU readout; excludes disk, cold start, acquisition and model loading.",
+  "implementation_hashes": {
+    "phase102_stream.py": "9a039d523fd7a974c3f01c1be231d86c0b96f5d68291ce27a271cf66d4b6f219",
+    "phase127_stream.py": "4405d6ccb283d724cdd7ed7ab6853646777b9fd2a6a3e841ab89ae0c78e4e276",
+    "phase133_waveform_stream.py": "c1b4a14a5b7daadd0be605be7716e027aed1f2fda1bb8624b5363721c0ce7505"
+  }
+}

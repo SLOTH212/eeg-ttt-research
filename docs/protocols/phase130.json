@@ -1,0 +1,107 @@
+{
+  "created_utc": "2026-10-06T08:48:19.265576+00:00",
+  "purpose": "Source checkpoint-selector sensitivity of fixed staticcausalhistory method; swap4sourcevalidation people, do not choosebetterselector fromtargetresults.",
+  "training": [
+    0,
+    1,
+    2,
+    10,
+    11,
+    20,
+    21,
+    30,
+    31,
+    32
+  ],
+  "original_selector": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "new_selector": [
+    7,
+    17,
+    27,
+    37
+  ],
+  "backbone_phases": {
+    "cbramod": "phase119",
+    "labram": "phase121"
+  },
+  "parent_models": [
+    {
+      "model": "cbramod",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+      "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+    },
+    {
+      "model": "labram",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase21/mixed_pretrained_0.0001/model.pt",
+      "sha256": "2f9b09c60412bb93c25a1a6b38b768a9e6e5c9ded8f10e0ef4ed2749c996b8b5"
+    },
+    {
+      "model": "cbramod",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+      "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+    },
+    {
+      "model": "labram",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_0.0001_seed29/model.pt",
+      "sha256": "74b75e563970cb433e526e73f05dc8849ab7c5bee1ea5760314d95eda6194784"
+    },
+    {
+      "model": "cbramod",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+      "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+    },
+    {
+      "model": "labram",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_2e-05_seed43/model.pt",
+      "sha256": "58442d8f92d5851942bfea559d82fd20a7cf27bb3db1e4e02209d4c43ea2b85e"
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "variants": [
+    "current",
+    "repeat11",
+    "history11"
+  ],
+  "training_recipe": "Exactlyphase119/121 source10,30epochs,AdamW.001wd.001,batch128,sqrtinverseclassweights,zeroresidualhead,sourcefeaturemean/std floor.1,same seedpermutation/dropout. Onlyselectionpeople change.",
+  "selection": "Earliestbest new4people rawmeanMacroF1 amongepoch0..30, meanwithin1pp/eachpersonwithin2pp of ownparentbaseline,epoch0fallback. Original4people evaluatedonlyfor historicaltrajectory replay and subsequent sourcetransfer, notnewselection.",
+  "reproduction": "InitialtrainableparameterSHA and30permutationSHAs exact versus original. Atoldselected andfinal30 comparefullstate maxabs<=5e-5, atoldselected compareoriginalsource savedprobabilities<=2e-5 andargmaxexact. Record everyepoch oldselector MacroF1difference; no newtargetaccess duringtraining.",
+  "scope": "Allsource/targetpeoplealreadyobserved, notblindvalidation. Parentencoders remaintrainedonoriginal10, so both4person selectors are disjointfromsourcefitting. Evaluateallnewsource-selected outcomes includingfallbacks in laterfixedtarget sensitivity; no selection between original/newselector using targets.",
+  "original_protocol_hashes": {
+    "cbramod": "fd535b803f1f4b9a8f083782c46062bcb602362fbcde99f75070b8d182d85d72",
+    "labram": "b8b043b31622cfec32e05933635957d00ecc6d75aac2cbedef69e56f160087cd"
+  },
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

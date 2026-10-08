@@ -1,0 +1,206 @@
+{
+  "purpose": "Exploratory age-composition source model control; all target subjects previously examined; not a fresh confirmatory test",
+  "dataset": "Sleep-EDF Expanded 1.0.0, SC subjects 00-19, first available night only",
+  "subject_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "folds": {
+    "young": {
+      "base_train": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "base_val": [
+        5,
+        15,
+        25,
+        35
+      ],
+      "evaluation": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        26,
+        27,
+        28,
+        29,
+        36,
+        37,
+        38
+      ]
+    },
+    "middle": {
+      "base_train": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "base_val": [
+        5,
+        15,
+        25,
+        35
+      ],
+      "evaluation": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        26,
+        27,
+        28,
+        29,
+        36,
+        37,
+        38
+      ]
+    },
+    "mixed": {
+      "base_train": [
+        0,
+        1,
+        2,
+        10,
+        11,
+        20,
+        21,
+        30,
+        31,
+        32
+      ],
+      "base_val": [
+        5,
+        15,
+        25,
+        35
+      ],
+      "evaluation": [
+        6,
+        7,
+        8,
+        9,
+        16,
+        17,
+        18,
+        19,
+        26,
+        27,
+        28,
+        29,
+        36,
+        37,
+        38
+      ]
+    }
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "channels": [
+    "EEG Fpz-Cz",
+    "EEG Pz-Oz"
+  ],
+  "sampling_hz": 100,
+  "window_seconds": 30,
+  "labels": {
+    "Sleep stage W": 0,
+    "Sleep stage 1": 1,
+    "Sleep stage 2": 2,
+    "Sleep stage 3": 3,
+    "Sleep stage 4": 3,
+    "Sleep stage R": 4
+  },
+  "unknown_labels": -1,
+  "timeline": "All complete nonoverlapping 30-second windows; no label-based sleep crop. Unknown/movement windows still seen by adaptation but masked from offline metrics.",
+  "preprocessing": "physical microvolt conversion; fixed divide by 100; per-window channel mean removal; clip to +/-20 after scaling. No across-window or whole-night statistics.",
+  "writable": "BatchNorm affine parameters only; all running stats fixed; model.eval at deployment",
+  "adaptation": {
+    "optimizer": "SGD no momentum",
+    "objective": "entropy",
+    "lr_candidates": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "projection_relative_radius": 0.1
+  },
+  "diagnostics": {
+    "stride": 20,
+    "horizons": [
+      1,
+      4,
+      10
+    ],
+    "primary_horizon": 4,
+    "protocol": "predict then update; paired snapshot; future updates suspended"
+  },
+  "metrics": "subject-level macro F1 over fixed 5 labels with absent classes F1=0; balanced accuracy over present classes; kappa; cross entropy; per-class recall; neg rate at epsilon=0.01",
+  "selection": "No evaluation subject labels for training, checkpoint choice, LR choice, controller or threshold fitting. Evaluation is a small pilot, not a sealed confirmatory test.",
+  "stop_gates": "Audit and baseline first. If repeated oracle benefit is negligible or deployable signals fail, report negative result and do not escalate model complexity without evidence.",
+  "allowed_cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu_allowed": false,
+  "created_utc": "2026-10-02T16:49:29.097486+00:00",
+  "source_control": "10 training participants per cell,5 female5male, same4 validation people across cells; age coverage of weight training changes; mixed-age supervised checkpoint selection is shared by all cells"
+}

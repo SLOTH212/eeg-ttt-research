@@ -1,0 +1,49 @@
+{
+  "created_utc": "2026-10-02T19:04:38.879890+00:00",
+  "scope": "Exploratory frozen pretrained feature / linear probe study; all target cohorts previously observed; not a new blinded test.",
+  "upstream": {
+    "repository": "https://github.com/935963004/LaBraM",
+    "revision": "c431221e6cfd23dbfa9950e0180682fb322b0548"
+  },
+  "checkpoint_sha256": "7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c",
+  "pretraining_overlap": "Official paper Appendix D does not list Sleep-EDF; no independent subject-identity audit of author private data.",
+  "paper": "https://proceedings.iclr.cc/paper_files/paper/2024/file/47393e8594c82ce8fd83adc672cf9872-Paper-Conference.pdf",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": false,
+  "encoder": "LaBraM base, frozen original pretrained final token LayerNorm; mean non-CLS tokens per15seconds, concatenate two halves of30seconds into400features.",
+  "montage": "Two bipolar channels Fpz-Cz and Pz-Oz. Positional embeddings are arithmetic means of endpoint electrode embeddings. This is an explicit exploratory heuristic, not an official bipolar-montage adapter.",
+  "preprocess": "Existing100Hz centered/clipped waveform cache in100uV units; within-current30s window fourth-order0.1-45Hz zero-phase filter; polyphase resample to200Hz. Never filters across epoch boundary or future epochs. Original100Hz acquisition cannot supply45-75Hz information.",
+  "random_control": "Same architecture and feature pooling, random initialization seed17; same endpoint embedding rule.",
+  "sources": [
+    "young",
+    "mixed"
+  ],
+  "splits": "phase3/protocol.json",
+  "probe": "StandardScaler fit source train only; multinomial logistic regression C in[.001,.01,.1,1,10],sqrt inverse source class frequency and equal source participant total weight. Mean source validation participant fixed5-class MacroF1 chooses C.",
+  "representations": [
+    "pretrained400",
+    "random400",
+    "spectral52",
+    "pretrained_plus_spectral452"
+  ],
+  "evaluation": "Existing phase3 evaluation15 participants and older19 participants, reported separately. No seed-replication claim for convex probes or single random encoder.",
+  "numerical_solver_note": "Initial max_iter500; if needed2000, then continue up to10000 more iterations at unchanged objective/tolerance. Only converged candidates accepted. This numerical fallback does not use target labels.",
+  "posthoc_capacity_control": "Add random_plus_spectral452 after seeing complementarity, same source splits/C grid/weights/selection; avoids attributing dimension or random-feature nonlinear expansion to pretrained knowledge. All exploratory."
+}

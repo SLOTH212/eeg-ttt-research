@@ -1,0 +1,5 @@
+# Additional recorded dependencies; upstream repositories/weights obtained separately.
+einops==0.8.2
+timm==0.9.16
+huggingface-hub==0.36.2
+tqdm==4.70.0

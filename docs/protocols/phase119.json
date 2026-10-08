@@ -1,0 +1,76 @@
+{
+  "created_utc": "2026-10-06T07:29:14.718645+00:00",
+  "train": [
+    0,
+    1,
+    2,
+    10,
+    11,
+    20,
+    21,
+    30,
+    31,
+    32
+  ],
+  "validation": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "variants": [
+    "current",
+    "repeat11",
+    "history11"
+  ],
+  "parents": [
+    {
+      "model": "cbramod",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+      "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+    },
+    {
+      "model": "cbramod",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+      "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+    },
+    {
+      "model": "cbramod",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+      "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+    }
+  ],
+  "features": "Frozen CBraMod5class pre-softmaxlogits, subtract samewindow classmean for translationinvariance. Current5dim, repeatcurrent11times55dim, orcurrent+past10windows55dim; edgepad atstart. No labels in features.",
+  "architecture": "Residual SpectralNet64/32 BN/ELU/dropout.25, source-onlymean/std floor.1. Add MLPoutput to originalcurrent centeredlogits. Lastlinear initializedexactzero, soepoch0 equalsparent. Repeat/history55dim have identicalinitial trainableparameters.",
+  "training": "30epochs,AdamWlr.001wd.001,batch128,sqrtinverseclassweights normalizedmean1; same dedicated seedpermutations and dropout seed100000+seed afterconstructor. Parent frozen, onlyresidualheadtrained.",
+  "selection": "Earliest best rawmean4sourceMacroF1 amongepoch0..30 withnativeguards: meanwithin1pp and eachpersonwithin2pp of parent. Epoch0fallback. EMAsecondaryonly.",
+  "advance": "Onlyconsider existingtargetexploratoryreplication if3seed-mean withinperson history selected beats bothrepeat11 andfrozen mean, history-repeat positive inatleast3/4sourcepeople, allsource/checkpoint/prefixauditsPASS. No online or target adaptation; failedgate means no targetinference.",
+  "scope": "Sourcepeoplealreadyobserved; extra30headepochs supervisedlabels and frozenparenttrainingbudget disclosed. Static causalreadout, notTTT or teacher distillation; no newrawsamples.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

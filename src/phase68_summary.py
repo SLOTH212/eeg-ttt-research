@@ -1,0 +1,12 @@
+from pathlib import Path
+import numpy as np,pandas as pd,json
+r=Path(__file__).resolve().parents[1];o=r/"phase68";assert json.loads((o/"execution_audit.json").read_text())["status"]=="PASS";df=pd.read_csv(o/"reconstruction.csv");errors=[]
+for row in df.itertuples():
+ z=np.load(o/"cases"/f"{row.kind}_s{row.subject:02d}.npz");old=np.load(r/"phase62/cases"/f"s{row.subject:02d}_existing_bernoulli.npz");assert np.array_equal(z["masked_target"],old["masked_target"]) and np.array_equal(z["mask"],old["mask"]);offset=0;values=[]
+ for mask in z["mask"]:
+  n=int(mask.sum());y=z["masked_target"][offset:offset+n].astype(np.float64);p=z["masked_prediction"][offset:offset+n].astype(np.float64);s=z["masked_shuffle_prediction"][offset:offset+n].astype(np.float64);values.append([np.square(p-y).mean(),np.square(y).mean(),np.square(s-y).mean()]);offset+=n
+ values=np.array(values);assert np.allclose(values,z["window_metrics"],rtol=1e-12,atol=1e-12);means=values.mean(0);err=max(abs(means[0]-row.masked_mse),abs(means[1]-row.zero_mse),abs(means[2]-row.shuffled_mse));errors.append(err);assert err<1e-12
+ assert row.validity_pass==bool(means[0]<means[1] and means[0]<means[2])
+decision=json.loads((o/"decision.json").read_text());assert decision["primary_pretrained_valid"]==bool(df[df.kind=="pretrained"].validity_pass.all())
+(o/"audit.json").write_text(json.dumps(dict(status="PASS",cases=8,windows_per_person=96,masked_targets_exactly_reused=True,all_masked_mse_recomputed=True,maximum_metric_error=max(errors),source_classifier_hashes_verified=True,full_state_unchanged=True),indent=2))
+html='<!doctype html><html lang="zh"><meta charset="utf-8"><style>body{font:15px/1.7 system-ui;max-width:1250px;margin:30px auto}td,th{padding:5px;border-bottom:1px solid #ddd}</style><h1>分类微调后，原重建头不再通过有效性检查</h1><p>使用阶段66仅按源分类原始F1选出的预训练与随机载体。原波形重建投影完全未变，重用阶段62相同96窗/人、主预处理和Bernoulli掩码；无辅助头拟合和新标签。分类子集输出与保存结果一致，全部载体状态在检查中保持不变。</p>'+df.to_html(index=False,float_format=lambda x:f"{x:.7f}")+f'<p>预训练载体主检查通过{decision["passing_people"]}/4人，整体通过：{decision["primary_pretrained_valid"]}。原始冻结预训练头为3/4，本次分类微调后4人重建误差均高于零预测。编码器变化即可使原投影失配，即使输出头本身没更新，也不能直接宣称现成自监督目标仍可用。</p><p>随机载体原输出头没有预训练，不赋予其重建含义；表中original_pretrained_mse始终是原官方预训练模型参照。该负结果不否认分类表征收益，也不等于所有辅助目标无效；本阶段不运行重建驱动在线更新。</p><p><a href="protocol.json">协议</a> · <a href="audit.json">独立复算</a> · <a href="execution_audit.json">执行检查</a> · <a href="../phase66/report.html">分类微调</a></p></html>';(o/"report.html").write_text(html);print(decision);print("maximum error",max(errors))

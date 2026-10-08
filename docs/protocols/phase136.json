@@ -1,0 +1,754 @@
+{
+  "created_utc": "2026-10-06T09:29:56.724944+00:00",
+  "cases": [
+    {
+      "domain": "source",
+      "subject": "s05",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s05_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s05_meta.npz"
+    },
+    {
+      "domain": "source",
+      "subject": "s15",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s15_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s15_meta.npz"
+    },
+    {
+      "domain": "source",
+      "subject": "s25",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s25_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s25_meta.npz"
+    },
+    {
+      "domain": "source",
+      "subject": "s35",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s35_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s35_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s06",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s06_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s06_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s08",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s08_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s08_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s09",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s09_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s09_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s16",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s16_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s16_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s18",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s18_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s18_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s19",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/data/processed/s19_x.npy",
+      "labels": "<PROJECT_ROOT>/data/processed/s19_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s26",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s26_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s26_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s28",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s28_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s28_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s29",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s29_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s29_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s36",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s36_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s36_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s38",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase2/processed/s38_x.npy",
+      "labels": "<PROJECT_ROOT>/phase2/processed/s38_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s40",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s40_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s40_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s41",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s41_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s41_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s42",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s42_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s42_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s43",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s43_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s43_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s44",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s44_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s44_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s45",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s45_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s45_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s46",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s46_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s46_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s47",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s47_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s47_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s48",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s48_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s48_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s49",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s49_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s49_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s50",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s50_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s50_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s51",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s51_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s51_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s52",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s52_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s52_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s53",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s53_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s53_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s54",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s54_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s54_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s55",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s55_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s55_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s56",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s56_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s56_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s57",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s57_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s57_meta.npz"
+    },
+    {
+      "domain": "sleepedf",
+      "subject": "s58",
+      "montage": "native",
+      "x": "<PROJECT_ROOT>/phase6/processed/s58_x.npy",
+      "labels": "<PROJECT_ROOT>/phase6/processed/s58_meta.npz"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III001",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III001",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III002",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III002_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III002_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III002",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III002_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III002_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III003",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III003_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III003_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III003",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III003_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III003_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III004",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III004_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III004_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III004",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III004_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III004_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III005",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III005_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III005_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III005",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III005_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III005_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III006",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III006_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III006_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III006",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III006_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III006_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III007",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III007_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III007_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III007",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III007_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III007_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III008",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III008_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III008_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III008",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III008_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III008_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III009",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III009_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III009_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III009",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III009_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III009_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III010",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III010_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III010_y.npy"
+    },
+    {
+      "domain": "healthy",
+      "subject": "sub-III010",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase76/processed/sub-III010_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase77/labels/sub-III010_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I021",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I021",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I022",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I022_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I022_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I022",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I022_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I022_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I023",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I023_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I023_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I023",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I023_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I023_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I024",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I024_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I024_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I024",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I024_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I024_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I025",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I025_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I025_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I025",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I025_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I025_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I026",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I026_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I026_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I026",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I026_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I026_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I027",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I027_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I027_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I027",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I027_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I027_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I028",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I028_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I028_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I028",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I028_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I028_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I029",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I029_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I029_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I029",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I029_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I029_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I030",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I030_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I030_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I030",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I030_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I030_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I031",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I031_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I031_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I031",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I031_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I031_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I032",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I032_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I032_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I032",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I032_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I032_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I033",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I033_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I033_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I033",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I033_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I033_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I034",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I034_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I034_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I034",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I034_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I034_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I035",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I035_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I035_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I035",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I035_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I035_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I036",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I036_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I036_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I036",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I036_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I036_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I037",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I037_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I037_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I037",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I037_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I037_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I038",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I038_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I038_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I038",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I038_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I038_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I039",
+      "montage": "left",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I039_left_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I039_y.npy"
+    },
+    {
+      "domain": "patient",
+      "subject": "sub-I039",
+      "montage": "right",
+      "x": "<PROJECT_ROOT>/phase83/processed/sub-I039_right_x.npy",
+      "labels": "<PROJECT_ROOT>/phase83/labels/sub-I039_y.npy"
+    }
+  ],
+  "parents": [
+    {
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_17/model.pt",
+      "sha256": "17fae4eb65473ecf803e76f75a1d8b75dfd9c58011af5d36d46117d041f285bf",
+      "source_selected_epoch": 25,
+      "source_val_f1": 0.5244065437351199
+    },
+    {
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_29/model.pt",
+      "sha256": "c6d299b9cb112921d9f968363cd1e840cf7132884f98e00e3bd21b2b163588de",
+      "source_selected_epoch": 21,
+      "source_val_f1": 0.5370557963469088
+    },
+    {
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_43/model.pt",
+      "sha256": "43ad99c406991a621ede7782f66761f1cc92525907c5681f3d919e910ed0113f",
+      "source_selected_epoch": 13,
+      "source_val_f1": 0.5442029580012904
+    }
+  ],
+  "heads": [
+    {
+      "seed": 17,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase135/current_seed17/model.pt",
+      "sha256": "16ef952902ee47a6ef28dd769d4380f34ef91978297004aa9d3b71c9aca1e8b8"
+    },
+    {
+      "seed": 17,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase135/repeat11_seed17/model.pt",
+      "sha256": "cb842503e35f8fb13f03ac65a663e0390b14769ee7afce0edd52bd94421bdd96"
+    },
+    {
+      "seed": 17,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase135/history11_seed17/model.pt",
+      "sha256": "bac2f8dcfcee2fc2a42a526d123a91a8c57a53ac78220c0b05df54ae058c729e"
+    },
+    {
+      "seed": 29,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase135/current_seed29/model.pt",
+      "sha256": "685c70b33ad1212aaf524dd90e82cacac27c651931b2e0f524b7166c8dbebcc8"
+    },
+    {
+      "seed": 29,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase135/repeat11_seed29/model.pt",
+      "sha256": "0f64bfbcc9a593c25899988e5890f2f3e4a8b65e66e9f26f6b4146e3b1b8eb14"
+    },
+    {
+      "seed": 29,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase135/history11_seed29/model.pt",
+      "sha256": "aac4b0ae6059ea3c05ab85515bc59920733bd9baba29f57860ff4ee5759244a2"
+    },
+    {
+      "seed": 43,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase135/current_seed43/model.pt",
+      "sha256": "7d96c5cccc809117782d3069d105ca2a47276a7501201c3a85faa78c880b23a3"
+    },
+    {
+      "seed": 43,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase135/repeat11_seed43/model.pt",
+      "sha256": "3e853820fc984a8338b130844d693c8c2e47bb9e44356a2827cedd902d23b5f4"
+    },
+    {
+      "seed": 43,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase135/history11_seed43/model.pt",
+      "sha256": "bdeb701d0aef2d82b5361e44b1dd2031d2b67701676ac0c1c93833c928e4f771"
+    }
+  ],
+  "modes": "Source4 and oldSleepEDF30: rawonly. Healthy10and oldpatient19 bothleft/right: raw and alreadyfixedfullshapeguard. 150case-inputconditions.",
+  "primary": "OldSleepEDF30 native rawinput, sameEMA.5, selectedhistory11 minus samecapacity selectedrepeat11; average3seed metricswithinperson, pairedperson bootstrap10000 rng120017 95percentileCI. No primaryreplacement by EMA1 or externalcohort.",
+  "secondary": "Currenthead,frozenparent, originalcontext11teacher andfixedhalfparentteacherblend; EMA1/.8; healthy andoldpatient separate,leftprimarywithincohort/rightsecondary; existingfullshapeinputvsraw.",
+  "interpretation": "Alltargets previouslyobserved. Newpredictions evaluated exploratorily, notblindreplication. Staticheads selectedsourceonly; no targetparameterupdates or thresholds. NewI041-I060 excludedbecause raw/featurecachesnotretained; no redownload/cohortexpansion.",
+  "shape_reference_sha256": "6aa93d5adcbd4fb3cba8c7b7179ac07090ab500dc37c11319138998916bbcffd",
+  "scope": "All9selectedheadstates fixedand hashed beforetargetinference; failed/fallbackseeds retained. Classificationlabels notread during predictionphase; no newblindclaim.",
+  "preprocessing": "Existing EEGNet-style parent takes normalized100Hz2x3000 windows directly, after fixedfullshape input when requested; no foundationmodel filters or resize. Same historyhead recipe. NotofficialexactEEGNet or causalpretrainingablation.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

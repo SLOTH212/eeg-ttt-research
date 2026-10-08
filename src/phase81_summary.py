@@ -1,0 +1,25 @@
+from common import *
+from phase2_temporal import ema
+from scipy.signal import lfilter
+import pandas as pd,hashlib
+o=ROOT/"phase81";pr=json.loads((o/"protocol.json").read_text());assert (o/"complete.json").exists();ex=json.loads((o/"execution_audit.json").read_text());assert ex["status"]=="PASS";assert hashlib.sha256(Path(pr["normalizer_protocol"]).read_bytes()).hexdigest()==pr["normalizer_protocol_sha256"];base=json.loads(Path(pr["normalizer_protocol"]).read_text());rows=[];normal=[];maxerr=0
+for sid in pr["subjects"]:
+ folder=ROOT/("data/processed" if sid<20 else "phase2/processed" if sid<40 else "phase6/processed");raw=np.load(folder/f"s{sid:02d}_x.npy",mmap_mode="r");y=np.load(folder/f"s{sid:02d}_meta.npz")["y"];original=np.load(o/"predictions"/f"s{sid:02d}_raw.npz")
+ for mode in pr["modes"]:
+  d=np.load(o/"predictions"/f"s{sid:02d}_{mode}.npz")
+  if mode!="raw":
+   a=np.load(o/"predictions"/f"s{sid:02d}_{mode}_normalizer.npz");rms=np.sqrt(np.mean(raw.astype(float)**2,axis=(1,2)));valid=rms>=1e-6;logs=np.log(rms[valid]);z,_=lfilter([.01],[1,-.99],logs,zi=[.99*logs[0]]);estimated=np.exp(z);gain=np.ones(len(raw));g=np.where(estimated<base["lower_source_rms_quantile"],base["source_reference_rms"]/estimated,1.) if mode=="guarded_median" else np.maximum(1,base["lower_source_rms_quantile"]/estimated);gain[valid]=np.clip(g,1,100);err=float(abs(gain-a["gains"]).max());maxerr=max(maxerr,err);assert err<1e-10;assert np.array_equal(rms,a["current_rms"]);xx=np.clip(raw*gain[:,None,None],-20,20).astype(np.float32);changed=np.any(xx!=raw,axis=(1,2));cc=np.convolve(changed.astype(int),np.ones(11,dtype=int),mode="full")[:len(raw)]>0;assert np.array_equal(changed,a["changed"]) and np.array_equal(cc,a["context_changed"]);normal.append(dict(subject=sid,mode=mode,windows=len(raw),changed=int(changed.sum()),changed_fraction=float(changed.mean()),context_affected=int(cc.sum()),gain_max=float(gain.max())))
+  for spec in pr["models"]:
+   key=f'{spec["model"]}_seed{spec["seed"]}';p=d[key];assert p.shape==(len(y),5) and np.isfinite(p).all() and abs(p.sum(1)-1).max()<2e-6
+   if mode!="raw":mask=cc if spec["model"]=="context11" else changed;assert np.array_equal(p[~mask],original[key][~mask])
+   for smooth in pr["ema"]:
+    q=p if smooth==1 else ema(p,smooth);m=metrics(y,q);cm=np.array(m["confusion"]);rows.append(dict(subject=sid,cohort="young" if sid<20 else "middle" if sid<40 else "older",model=spec["model"],seed=spec["seed"],mode=mode,ema=smooth,macro_f1=100*m["macro_f1"],accuracy=100*cm.trace()/cm.sum(),ce=m["ce"]))
+df=pd.DataFrame(rows);assert len(df)==2430;df.to_csv(o/"participants.csv",index=False);pd.DataFrame(normal).to_csv(o/"normalizer_people.csv",index=False);person=df.groupby(["subject","cohort","model","mode","ema"])[["macro_f1","accuracy","ce"]].mean().reset_index();person.to_csv(o/"seedmean_people.csv",index=False);summary=person.groupby(["model","mode","ema"])[["macro_f1","accuracy","ce"]].mean();summary.to_csv(o/"summary.csv");rng=np.random.default_rng(81017);comp=[]
+for model in ["cbramod","labram","context11"]:
+ for smooth in pr["ema"]:
+  p=person[(person.model==model)&(person.ema==smooth)].pivot(index="subject",columns="mode",values="macro_f1");idx=rng.integers(0,len(p),size=(10000,len(p)))
+  for mode in ["guarded_median","floor"]:
+   delta=p[mode]-p.raw;ci=np.quantile(delta.to_numpy()[idx].mean(1),[.025,.975]);comp.append(dict(model=model,ema=smooth,mode=mode,raw_f1=float(p.raw.mean()),adjusted_f1=float(p[mode].mean()),difference_pp=float(delta.mean()),ci_low=float(ci[0]),ci_high=float(ci[1]),positive_people=int((delta>0).sum()),negative_people=int((delta<0).sum()),unchanged_people=int((delta==0).sum()),harm_over_1pp=int((delta< -1).sum()),worst_person_pp=float(delta.min()),primary=model=="cbramod" and smooth==.5 and mode=="guarded_median"))
+comp=pd.DataFrame(comp);comp.to_csv(o/"paired_comparisons.csv",index=False);primary=comp[comp.primary].iloc[0].to_dict();(o/"primary_result.json").write_text(json.dumps(primary,indent=2));audit=dict(status="PASS",people=30,model_seeds=9,method_streams_recomputed=2430,normalizer_cases=60,maximum_independent_gain_error=maxerr,unchanged_prediction_reuse_verified=True,context_affected_window_expansion_verified=True,all_parameters_fixed=True,previously_observed_people=True);(o/"audit.json").write_text(json.dumps(audit,indent=2))
+(o/"report.html").write_text('<!doctype html><meta charset="utf-8"><style>body{font:16px/1.6 sans-serif;max-width:1300px;margin:35px auto}td,th{padding:6px;border:1px solid #ddd}</style><h1>固定幅值规则在原有30人群体上的风险</h1><p>不改变源1%幅值界限、模型或增益规则。原先30位SleepEDF目标者均已在项目中观察，此处为事后风险检查。三种分类器种子先在人内平均；未改变窗口严格复用原预测，11窗历史模型同时重算受影响的后10窗。</p>'+comp[comp.ema==.5].to_html(index=False)+'<p>这些幅值操作没有任何梯度更新，不能用来支持参数写入必要性。ISRUC上改善不代表原群体安全；个体伤害与均值同时报告。阈值不按本结果再搜索。</p><p><a href="audit.json">独立审计</a> · <a href="normalizer_people.csv">受影响窗口</a> · <a href="protocol.json">固定方案</a></p>')
+print(comp[comp.ema==.5].to_string(index=False));print(pd.DataFrame(normal).groupby("mode").agg(changed=("changed","sum"),affected_people=("changed",lambda v:int((v>0).sum()))).to_string());print(audit)

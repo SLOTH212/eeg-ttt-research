@@ -1,0 +1,136 @@
+{
+  "created_utc": "2026-10-06T05:27:35.046020+00:00",
+  "subjects": [
+    "sub-I041",
+    "sub-I042",
+    "sub-I043",
+    "sub-I044",
+    "sub-I045",
+    "sub-I046",
+    "sub-I047",
+    "sub-I048",
+    "sub-I049",
+    "sub-I050",
+    "sub-I051",
+    "sub-I052",
+    "sub-I053",
+    "sub-I054",
+    "sub-I055",
+    "sub-I056",
+    "sub-I057",
+    "sub-I058",
+    "sub-I059",
+    "sub-I060"
+  ],
+  "selection": "Next contiguous20ISRUC cohortI patients041-060, no choice from signals,labels,diagnoses,orperformance; no replacement for input incompatibility.",
+  "development_exposure": "Methods developed on prior SleepEDF and ISRUC III001-010/I021-039. Full public participants summary was previously downloaded but these subjects' rows were not consulted for design; individual event labels not read. Independent-person fixed-method validation, not independent-dataset validation.",
+  "models": [
+    {
+      "model": "cbramod",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+      "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+    },
+    {
+      "model": "labram",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase21/mixed_pretrained_0.0001/model.pt",
+      "sha256": "2f9b09c60412bb93c25a1a6b38b768a9e6e5c9ded8f10e0ef4ed2749c996b8b5"
+    },
+    {
+      "model": "context11",
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_17/model.pt",
+      "sha256": "69373f7f861eaf4971edd21acba7757cf80620fbdfe77dadbf8d5edc987d473c"
+    },
+    {
+      "model": "cbramod",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+      "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+    },
+    {
+      "model": "labram",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_0.0001_seed29/model.pt",
+      "sha256": "74b75e563970cb433e526e73f05dc8849ab7c5bee1ea5760314d95eda6194784"
+    },
+    {
+      "model": "context11",
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_29/model.pt",
+      "sha256": "703356383ff75c857a93296597f4751b7b40e0536e61c8284d4aaf586e145484"
+    },
+    {
+      "model": "cbramod",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+      "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+    },
+    {
+      "model": "labram",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase27/mixed_pretrained_2e-05_seed43/model.pt",
+      "sha256": "58442d8f92d5851942bfea559d82fd20a7cf27bb3db1e4e02209d4c43ea2b85e"
+    },
+    {
+      "model": "context11",
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase4/results/context11_mixed_43/model.pt",
+      "sha256": "52358332312190f3d250422d8a78e303a2989719193a6ef38d6d8f0ba0f4a74b"
+    }
+  ],
+  "montages": [
+    "left",
+    "right"
+  ],
+  "modes": [
+    "raw",
+    "scalar",
+    "floor",
+    "diagonal",
+    "full"
+  ],
+  "ema": [
+    1.0,
+    0.8,
+    0.5
+  ],
+  "primary": "CBraMod full minus scalar, left montage, EMA.5; three seed metrics averaged within each person, paired person bootstrap10000 seed101017. Positive mean and95%CI lower>0 support mean improvement on this cohort; report individual harm, no safetyclaim.",
+  "secondary": "Diagonal ablation, full-versusraw/floor, othermodels, rightmontage, otherEMA and input-triggered subgroup; never replace primary.",
+  "reference_sha256": "6aa93d5adcbd4fb3cba8c7b7179ac07090ab500dc37c11319138998916bbcffd",
+  "shape_protocol_sha256": "bedafcb18470810fe2842f2a4f178e8059e9a92b1433e2010b5f8f5c9954dc09",
+  "scalar_protocol_sha256": "c810542a097b7f1e67b4b5892a4395db3160bc6dc4bbdf9568047688fe8ba8a2",
+  "input_compatibility": "Require200Hz andvalidphysicalunits. Form F3-C3,C3-O1 andF4-C4,C4-O2 bysubtractingchannels sharingreference; A2/M2 orA1/M1 allowed only when eachtripletshares sameactualreference. This remainsproxymontage,nottrainingelectrodes.",
+  "input_exclusions": "Only absence of verified shared-reference triplets or incompatible declared units/sampling; record before that person's inference, no replacement. Other technical errors stop for audit.",
+  "label_map": {
+    "Sleep stage W": 0,
+    "Sleep stage N1": 1,
+    "Sleep stage N2": 2,
+    "Sleep stage N3": 3,
+    "Sleep stage R": 4,
+    "Sleep stage U": -1
+  },
+  "timeline": "Full30s windows fromrecordtime0; allwindowsprocessed,unscoredmaskedonlyforscoring; no label-basedcropping",
+  "label_access": "Download/read individualevents only after all eligible people have completed predictions and prediction hashes sealed.",
+  "storage": "Process one verified new task-temporary EDF at a time; retain header/provenance/derived-array hashes and predictions; remove only that scratch EDF after successful sealed person output or documented input exclusion. No persistent waveform copies, reproducible from manifest URL/hash.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

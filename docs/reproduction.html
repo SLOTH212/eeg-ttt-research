@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><title>复现说明</title><style>body{font:16px/1.8 sans-serif;max-width:1100px;margin:35px auto}td,th{border:1px solid #ccc;padding:8px}table{border-collapse:collapse}</style>
+<h1>复现边界与阶段链</h1><p>这是已暂停研究的源码和证据快照。克隆后可查看代码、校验发布文件和读取聚合结果；不能仅凭源码立即重现全部实验。</p>
+<h2>目录布局</h2><p>源码位于 src，项目根由源码位置确定。早期数据在 data/processed，中年/老年 SleepEDF 缓存分别在 phase2/processed 和 phase6/processed。实验在 phaseN 中生成协议、检查点、预测与报告；这些运行目录默认不进入 Git。</p>
+<p>docs/protocols 是只读快照，&lt;PROJECT_ROOT&gt; 是原工作目录占位符，不可直接复制为活动协议锁。原锁含原机路径和文件哈希；原始模型、数据与预测没有上传。转换前后哈希见 protocol_manifest.json。</p>
+<h2>静态历史链</h2><table><tr><th>载体</th><th>父模型前置条件</th><th>历史头</th><th>目标评价</th></tr>
+<tr><td>CBraMod</td><td>phase62上游/权重；phase66/71源父模型；phase79模型登记</td><td>phase119_logit_history.py → phase119_summary.py</td><td>phase120_history_targets.py → phase120_summary.py</td></tr>
+<tr><td>LaBraM</td><td>phase14上游/权重与probe；phase21/27父模型；phase79登记</td><td>phase121_labram_history.py → phase121_summary.py</td><td>phase123_labram_targets.py → phase123_summary.py</td></tr>
+<tr><td>EEGNet-style</td><td>phase3父模型；phase85固定模型/数据登记</td><td>phase135_eegnet_history.py → phase135_summary.py</td><td>phase136_eegnet_targets.py → phase136_summary.py</td></tr></table>
+<p>目标推理需要源门槛和独立重放通过，并依赖输入校准与旧基线预测。恢复最后一个头检查点不够；不能删除检查点保护条件来绕过缺失资源。</p>
+<h2>更新诊断与流式接口</h2><p>phase114_teacher_replication.py / phase126_history_entropy.py 是受限成对 WRITE 诊断，不等同于完整在线策略。phase102_stream.py 提供输入状态，phase127_stream.py 提供历史读出状态，仍依赖模型和源统计，并非独立安装的软件包。</p>
+<p>phase133_waveform_stream.py / phase138_eegnet_stream.py 执行单窗推理及恢复检查，起点是已标准化30秒波形，不包括EDF解码或设备采集。</p>
+<h2>执行约束</h2><p>原CPU affinity为8–23；普通导入可能创建目录、加载资源或运行实验。先用 tools/check_repository.py 静态检查。不要批量执行全部phase文件，也不要用旧resume_all.py代替阶段依赖规划。本次发布没有安装依赖、下载数据或恢复研究。</p>
+<h2>核验口径</h2><p>源码校验和发布边界检查不等于在新环境重新做过模型数值复现。没有原始数据和训练权重时，无法从本仓库单独重新核验完整结果。新硬件和依赖需要重新数值验证；现有本机审计仅作为已有证据。</p>

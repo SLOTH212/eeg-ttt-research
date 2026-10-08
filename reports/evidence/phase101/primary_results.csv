@@ -1,0 +1,2 @@
+subset,montage,model,ema,new_mode,old_mode,people,new_f1,old_f1,difference_pp,ci_low,ci_high,positive_people,harm_over_1pp,worst_pp
+all,left,cbramod,0.5,full,scalar,20,38.97640372470162,38.8725021653616,0.10390155934001459,0.0,0.2621266957104963,2,0,0.0

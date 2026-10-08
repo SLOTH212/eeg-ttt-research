@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-10-06T06:59:23.118378+00:00",
+  "purpose": "Two additional fixed classifier/teacher seeds for source teacher-WRITE robustness; do not reopen phase104failedonlinegate.",
+  "models": [
+    {
+      "seed": 29,
+      "student": {
+        "model": "cbramod",
+        "seed": 29,
+        "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+        "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+      },
+      "teacher": "<PROJECT_ROOT>/phase4/results/context11_mixed_29/model.pt",
+      "teacher_sha256": "703356383ff75c857a93296597f4751b7b40e0536e61c8284d4aaf586e145484"
+    },
+    {
+      "seed": 43,
+      "student": {
+        "model": "cbramod",
+        "seed": 43,
+        "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+        "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+      },
+      "teacher": "<PROJECT_ROOT>/phase4/results/context11_mixed_43/model.pt",
+      "teacher_sha256": "52358332312190f3d250422d8a78e303a2989719193a6ef38d6d8f0ba0f4a74b"
+    }
+  ],
+  "seed17_reference": {
+    "s07": "725b0cbda8204e6bfa5c618000b1de2ead0506af7f23e469fdc64e0b63051e62",
+    "s17": "2298277c4c4f614e64f153bcf1b852e523c9bf1f11022bc99f876fb768c72615",
+    "s27": "f64cd48627082b20b4399cd1e0302b8755df7af90f7ccef918211804610a40e3",
+    "s37": "0002907fa349cf88ddb1299ff7638cb12805a334e918c31e27831f3352d7f7b0",
+    "s05": "9936afe00aa36055d24c28ea465bc4ad0cf48bee5b53018715c638670c085002",
+    "s15": "ca70ca79e84fb3225903419ad53e2721a36bb371e20530d5d5accae70ee82684",
+    "s25": "2bbef726cacfcf7d3994e7d120997a55f5f9280548ad8e60a766f09e0349a63e",
+    "s35": "d51f3311726861a6f43fcc380e283547542e409a2b1eafccdd716d825256e76c"
+  },
+  "controllers": [
+    7,
+    17,
+    27,
+    37
+  ],
+  "validation": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "method": "Exactphase104primary softcurrentteacherCE, LN9600,lr.01,clip1; freshreset each exactphase91pulse. No hard/normmatched secondary replication.",
+  "static_controls": "Same-seed frozenstudent, directcontext11teacher and .5probabilityblend, with futureteacher onlyatfuture-arrival/evaluation.",
+  "aggregation": "Mean metricswithinperson across17/29/43; no probabilityensemble or seedpseudoreplication. Correction/harm counts averagedacrossseeds perperson, not newunique events.",
+  "scope": "Previouslyobserved8sourcepeople, no newtraining, no targetinference or onlineextension regardlessoutcome; keep priorfailed primarycompetitivegate.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

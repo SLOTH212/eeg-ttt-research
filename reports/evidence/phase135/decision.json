@@ -1,0 +1,14 @@
+{
+  "advance_existing_target_exploratory": true,
+  "history_repeat_mean_delta": 6.120517171407316,
+  "positive_people": 4,
+  "history_frozen_mean_delta": 6.497978931170173,
+  "person_history_repeat_delta": {
+    "5": 12.416800439909807,
+    "15": 3.4238742678744103,
+    "25": 1.1490797831526223,
+    "35": 7.492314194692426
+  },
+  "source_previously_observed": true,
+  "no_online_adaptation": true
+}

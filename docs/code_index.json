@@ -1,0 +1,3148 @@
+[
+  {
+    "file": "adaptation.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "aggregate.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "audit.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation"
+    ]
+  },
+  {
+    "file": "audit_real.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation"
+    ]
+  },
+  {
+    "file": "benchmark.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "build_research_report_20261006.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "common.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "continued_reports.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "controllers.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "download.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "evaluate.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation"
+    ]
+  },
+  {
+    "file": "final_audit.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation"
+    ]
+  },
+  {
+    "file": "finalize_report.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "identity_control.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "lr_sensitivity.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "numerical_audit.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation"
+    ]
+  },
+  {
+    "file": "phase100_replay.py",
+    "phase": 100,
+    "local_imports": [
+      "phase79_amplitude",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase100_shape.py",
+    "phase": 100,
+    "local_imports": [
+      "phase79_amplitude",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase100_summary.py",
+    "phase": 100,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase101_independent.py",
+    "phase": 101,
+    "local_imports": [
+      "phase76_prepare",
+      "phase79_amplitude",
+      "phase83_prepare",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase101_labels.py",
+    "phase": 101,
+    "local_imports": [
+      "phase83_prepare"
+    ]
+  },
+  {
+    "file": "phase101_summary.py",
+    "phase": 101,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase102_audit.py",
+    "phase": 102,
+    "local_imports": [
+      "phase102_stream",
+      "phase79_amplitude",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase102_stream.py",
+    "phase": 102,
+    "local_imports": [
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase103_oracle.py",
+    "phase": 103,
+    "local_imports": [
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase103_summary.py",
+    "phase": 103,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase104_summary.py",
+    "phase": 104,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase104_teacher.py",
+    "phase": 104,
+    "local_imports": [
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase105_static_blend.py",
+    "phase": 105,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase106_relative_history.py",
+    "phase": 106,
+    "local_imports": [
+      "common",
+      "phase77_predict"
+    ]
+  },
+  {
+    "file": "phase107_static_eval.py",
+    "phase": 107,
+    "local_imports": [
+      "common",
+      "phase77_predict"
+    ]
+  },
+  {
+    "file": "phase107_summary.py",
+    "phase": 107,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase108_transition_diagnosis.py",
+    "phase": 108,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase109_amplitude_steps.py",
+    "phase": 109,
+    "local_imports": [
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase109_summary.py",
+    "phase": 109,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase10_horizons.py",
+    "phase": 10,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase10_run.py",
+    "phase": 10,
+    "local_imports": []
+  },
+  {
+    "file": "phase110_known_reset.py",
+    "phase": 110,
+    "local_imports": [
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase110_summary.py",
+    "phase": 110,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase111_compare.py",
+    "phase": 111,
+    "local_imports": []
+  },
+  {
+    "file": "phase111_download_mat.py",
+    "phase": 111,
+    "local_imports": []
+  },
+  {
+    "file": "phase112_contrast_augmentation.py",
+    "phase": 112,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase112_summary.py",
+    "phase": 112,
+    "local_imports": [
+      "phase112_contrast_augmentation"
+    ]
+  },
+  {
+    "file": "phase113_online_cost.py",
+    "phase": 113,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase114_summary.py",
+    "phase": 114,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase114_teacher_replication.py",
+    "phase": 114,
+    "local_imports": [
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase115_horizon.py",
+    "phase": 115,
+    "local_imports": [
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase115_summary.py",
+    "phase": 115,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase116_static_distillation.py",
+    "phase": 116,
+    "local_imports": [
+      "phase66_train",
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase116_summary.py",
+    "phase": 116,
+    "local_imports": [
+      "phase2_temporal",
+      "phase66_train",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase117_observable_utility.py",
+    "phase": 117,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase118_stage_audit.py",
+    "phase": 118,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase119_logit_history.py",
+    "phase": 119,
+    "local_imports": [
+      "phase119_models",
+      "phase66_train",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase119_models.py",
+    "phase": 119,
+    "local_imports": [
+      "common",
+      "phase77_predict"
+    ]
+  },
+  {
+    "file": "phase119_summary.py",
+    "phase": 119,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase11_alignment.py",
+    "phase": 11,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase11_run.py",
+    "phase": 11,
+    "local_imports": []
+  },
+  {
+    "file": "phase11_summary.py",
+    "phase": 11,
+    "local_imports": []
+  },
+  {
+    "file": "phase120_history_targets.py",
+    "phase": 120,
+    "local_imports": [
+      "phase119_models",
+      "phase86_meta_waveform",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase120_summary.py",
+    "phase": 120,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase121_labram_history.py",
+    "phase": 121,
+    "local_imports": [
+      "phase119_models",
+      "phase27_train",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase121_summary.py",
+    "phase": 121,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase122_history_mechanism.py",
+    "phase": 122,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase123_labram_targets.py",
+    "phase": 123,
+    "local_imports": [
+      "phase119_models",
+      "phase27_train",
+      "phase86_meta_waveform",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase123_summary.py",
+    "phase": 123,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase124_temporal_shift.py",
+    "phase": 124,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase125_summary.py",
+    "phase": 125,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase125_transition_balance.py",
+    "phase": 125,
+    "local_imports": [
+      "phase119_models"
+    ]
+  },
+  {
+    "file": "phase126_history_entropy.py",
+    "phase": 126,
+    "local_imports": [
+      "phase119_models",
+      "phase66_train",
+      "phase77_predict",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase126_summary.py",
+    "phase": 126,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase127_audit.py",
+    "phase": 127,
+    "local_imports": [
+      "common",
+      "phase127_stream",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase127_stream.py",
+    "phase": 127,
+    "local_imports": [
+      "phase119_models"
+    ]
+  },
+  {
+    "file": "phase128_fixed_blends.py",
+    "phase": 128,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase129_augmentation_calibration.py",
+    "phase": 129,
+    "local_imports": [
+      "phase86_meta_waveform",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase129_summary.py",
+    "phase": 129,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase12_13_summary.py",
+    "phase": 12,
+    "local_imports": []
+  },
+  {
+    "file": "phase12_audit.py",
+    "phase": 12,
+    "local_imports": [
+      "phase12_temporal_bn"
+    ]
+  },
+  {
+    "file": "phase12_run.py",
+    "phase": 12,
+    "local_imports": []
+  },
+  {
+    "file": "phase12_temporal_bn.py",
+    "phase": 12,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers",
+      "phase2_temporal",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase130_selector_swap.py",
+    "phase": 130,
+    "local_imports": [
+      "phase119_models",
+      "phase27_train",
+      "phase66_train",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase130_summary.py",
+    "phase": 130,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase131_selector_targets.py",
+    "phase": 131,
+    "local_imports": [
+      "phase119_models"
+    ]
+  },
+  {
+    "file": "phase131_summary.py",
+    "phase": 131,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase132_temporal_decomposition.py",
+    "phase": 132,
+    "local_imports": []
+  },
+  {
+    "file": "phase133_summary.py",
+    "phase": 133,
+    "local_imports": []
+  },
+  {
+    "file": "phase133_waveform_stream.py",
+    "phase": 133,
+    "local_imports": [
+      "phase102_stream",
+      "phase127_stream",
+      "phase27_train",
+      "phase2_temporal",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase134_seed_stability.py",
+    "phase": 134,
+    "local_imports": []
+  },
+  {
+    "file": "phase135_eegnet_history.py",
+    "phase": 135,
+    "local_imports": [
+      "phase119_models",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase135_summary.py",
+    "phase": 135,
+    "local_imports": [
+      "phase119_models",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase136_eegnet_targets.py",
+    "phase": 136,
+    "local_imports": [
+      "phase119_models",
+      "phase86_meta_waveform",
+      "phase99_covariance"
+    ]
+  },
+  {
+    "file": "phase136_summary.py",
+    "phase": 136,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase137_carrier_comparison.py",
+    "phase": 137,
+    "local_imports": []
+  },
+  {
+    "file": "phase138_eegnet_stream.py",
+    "phase": 138,
+    "local_imports": [
+      "phase102_stream",
+      "phase127_stream",
+      "phase27_train",
+      "phase2_temporal",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase138_summary.py",
+    "phase": 138,
+    "local_imports": []
+  },
+  {
+    "file": "phase13_audit.py",
+    "phase": 13,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase13_run.py",
+    "phase": 13,
+    "local_imports": []
+  },
+  {
+    "file": "phase13_static_scope.py",
+    "phase": 13,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase14_15_audit.py",
+    "phase": 14,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase14_15_report.py",
+    "phase": 14,
+    "local_imports": []
+  },
+  {
+    "file": "phase14_15_summary.py",
+    "phase": 14,
+    "local_imports": []
+  },
+  {
+    "file": "phase14_features.py",
+    "phase": 14,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase14_probe.py",
+    "phase": 14,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase14_run_features.py",
+    "phase": 14,
+    "local_imports": []
+  },
+  {
+    "file": "phase14_run_probes.py",
+    "phase": 14,
+    "local_imports": []
+  },
+  {
+    "file": "phase15_head_retention.py",
+    "phase": 15,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers",
+      "phase14_probe",
+      "phase2_head",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase15_run.py",
+    "phase": 15,
+    "local_imports": []
+  },
+  {
+    "file": "phase16_masked_pulses.py",
+    "phase": 16,
+    "local_imports": [
+      "phase14_features"
+    ]
+  },
+  {
+    "file": "phase16_report.py",
+    "phase": 16,
+    "local_imports": []
+  },
+  {
+    "file": "phase16_summary.py",
+    "phase": 16,
+    "local_imports": []
+  },
+  {
+    "file": "phase17_frozen_audit.py",
+    "phase": 17,
+    "local_imports": [
+      "phase16_masked_pulses"
+    ]
+  },
+  {
+    "file": "phase17_run.py",
+    "phase": 17,
+    "local_imports": []
+  },
+  {
+    "file": "phase17_run_small.py",
+    "phase": 17,
+    "local_imports": []
+  },
+  {
+    "file": "phase17_source_cache.py",
+    "phase": 17,
+    "local_imports": [
+      "phase16_masked_pulses"
+    ]
+  },
+  {
+    "file": "phase17_source_screen.py",
+    "phase": 17,
+    "local_imports": [
+      "phase16_masked_pulses",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase17_summary.py",
+    "phase": 17,
+    "local_imports": []
+  },
+  {
+    "file": "phase18_run.py",
+    "phase": 18,
+    "local_imports": []
+  },
+  {
+    "file": "phase18_source_tune.py",
+    "phase": 18,
+    "local_imports": [
+      "phase16_masked_pulses"
+    ]
+  },
+  {
+    "file": "phase18_summary_audit.py",
+    "phase": 18,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase19_short_source.py",
+    "phase": 19,
+    "local_imports": [
+      "phase14_features"
+    ]
+  },
+  {
+    "file": "phase20_write_observability.py",
+    "phase": 20,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase21_eval_watch.py",
+    "phase": 21,
+    "local_imports": []
+  },
+  {
+    "file": "phase21_evaluate.py",
+    "phase": 21,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase21_full_encoder.py",
+    "phase": 21,
+    "local_imports": [
+      "phase16_masked_pulses"
+    ]
+  },
+  {
+    "file": "phase21_plot.py",
+    "phase": 21,
+    "local_imports": []
+  },
+  {
+    "file": "phase21_run.py",
+    "phase": 21,
+    "local_imports": []
+  },
+  {
+    "file": "phase21_strong_controls.py",
+    "phase": 21,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase21_summary.py",
+    "phase": 21,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase22_cuda_graph.py",
+    "phase": 22,
+    "local_imports": [
+      "phase22_source_screen"
+    ]
+  },
+  {
+    "file": "phase22_frozen_audit.py",
+    "phase": 22,
+    "local_imports": [
+      "phase22_source_screen"
+    ]
+  },
+  {
+    "file": "phase22_graph_screen.py",
+    "phase": 22,
+    "local_imports": [
+      "phase21_full_encoder",
+      "phase22_cuda_graph"
+    ]
+  },
+  {
+    "file": "phase22_run.py",
+    "phase": 22,
+    "local_imports": []
+  },
+  {
+    "file": "phase22_run_extension.py",
+    "phase": 22,
+    "local_imports": []
+  },
+  {
+    "file": "phase22_source_screen.py",
+    "phase": 22,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase22_summary.py",
+    "phase": 22,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase23_evaluate.py",
+    "phase": 23,
+    "local_imports": [
+      "phase22_cuda_graph",
+      "phase22_source_screen",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase23_run.py",
+    "phase": 23,
+    "local_imports": []
+  },
+  {
+    "file": "phase23_summary.py",
+    "phase": 23,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase24_feature_audit.py",
+    "phase": 24,
+    "local_imports": [
+      "phase22_source_screen"
+    ]
+  },
+  {
+    "file": "phase24_observability.py",
+    "phase": 24,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase24_pulses.py",
+    "phase": 24,
+    "local_imports": [
+      "phase22_cuda_graph",
+      "phase22_source_screen"
+    ]
+  },
+  {
+    "file": "phase24_report.py",
+    "phase": 24,
+    "local_imports": []
+  },
+  {
+    "file": "phase24_run.py",
+    "phase": 24,
+    "local_imports": []
+  },
+  {
+    "file": "phase25_cache.py",
+    "phase": 25,
+    "local_imports": [
+      "phase22_source_screen"
+    ]
+  },
+  {
+    "file": "phase25_gate.py",
+    "phase": 25,
+    "local_imports": [
+      "phase22_cuda_graph",
+      "phase22_source_screen",
+      "phase24_observability",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase25_run.py",
+    "phase": 25,
+    "local_imports": []
+  },
+  {
+    "file": "phase25_static_matched.py",
+    "phase": 25,
+    "local_imports": [
+      "phase25_cache"
+    ]
+  },
+  {
+    "file": "phase25_summary.py",
+    "phase": 25,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase26_cls_diagnostic.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_joint_train.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_reconstruction.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_reconstruction_position_control.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_report.py",
+    "phase": 26,
+    "local_imports": []
+  },
+  {
+    "file": "phase26_run.py",
+    "phase": 26,
+    "local_imports": []
+  },
+  {
+    "file": "phase26_token_audit.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_token_controls.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase26_tokens.py",
+    "phase": 26,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase27_evaluate.py",
+    "phase": 27,
+    "local_imports": [
+      "phase27_train"
+    ]
+  },
+  {
+    "file": "phase27_plot.py",
+    "phase": 27,
+    "local_imports": []
+  },
+  {
+    "file": "phase27_run.py",
+    "phase": 27,
+    "local_imports": []
+  },
+  {
+    "file": "phase27_summary.py",
+    "phase": 27,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase27_train.py",
+    "phase": 27,
+    "local_imports": [
+      "phase16_masked_pulses"
+    ]
+  },
+  {
+    "file": "phase28_code_prior.py",
+    "phase": 28,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase28_joint_train.py",
+    "phase": 28,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase28_run.py",
+    "phase": 28,
+    "local_imports": []
+  },
+  {
+    "file": "phase28_summary.py",
+    "phase": 28,
+    "local_imports": []
+  },
+  {
+    "file": "phase28_tokens.py",
+    "phase": 28,
+    "local_imports": [
+      "phase21_full_encoder",
+      "phase26_reconstruction"
+    ]
+  },
+  {
+    "file": "phase28_validate.py",
+    "phase": 28,
+    "local_imports": [
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase28_zero_audit.py",
+    "phase": 28,
+    "local_imports": [
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase29_forward_graph.py",
+    "phase": 29,
+    "local_imports": [
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase29_observability.py",
+    "phase": 29,
+    "local_imports": []
+  },
+  {
+    "file": "phase29_plot.py",
+    "phase": 29,
+    "local_imports": []
+  },
+  {
+    "file": "phase29_pulses.py",
+    "phase": 29,
+    "local_imports": [
+      "phase28_joint_train",
+      "phase29_forward_graph"
+    ]
+  },
+  {
+    "file": "phase29_run.py",
+    "phase": 29,
+    "local_imports": []
+  },
+  {
+    "file": "phase29_summary.py",
+    "phase": 29,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_audit.py",
+    "phase": 2,
+    "local_imports": [
+      "common",
+      "phase2_head"
+    ]
+  },
+  {
+    "file": "phase2_download.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_final_audit.py",
+    "phase": 2,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase2_fresh.py",
+    "phase": 2,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers",
+      "phase2_head",
+      "phase2_prototype",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase2_head.py",
+    "phase": 2,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase2_lock.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_prepare.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_prototype.py",
+    "phase": 2,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase2_report.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_run_fresh.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_run_simple.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_shift.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_simple.py",
+    "phase": 2,
+    "local_imports": [
+      "adaptation",
+      "common"
+    ]
+  },
+  {
+    "file": "phase2_simple_summary.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_summarize.py",
+    "phase": 2,
+    "local_imports": []
+  },
+  {
+    "file": "phase2_temporal.py",
+    "phase": 2,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase30_frozen_audit.py",
+    "phase": 30,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase30_masked_graph.py",
+    "phase": 30,
+    "local_imports": [
+      "phase21_full_encoder",
+      "phase22_cuda_graph",
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase30_run.py",
+    "phase": 30,
+    "local_imports": []
+  },
+  {
+    "file": "phase30_screen.py",
+    "phase": 30,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase30_summary.py",
+    "phase": 30,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase31_evaluate.py",
+    "phase": 31,
+    "local_imports": [
+      "phase26_reconstruction",
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase31_run.py",
+    "phase": 31,
+    "local_imports": []
+  },
+  {
+    "file": "phase31_stage_analysis.py",
+    "phase": 31,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase31_summary.py",
+    "phase": 31,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase32_feature_audit.py",
+    "phase": 32,
+    "local_imports": [
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase32_observability.py",
+    "phase": 32,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase32_pulses.py",
+    "phase": 32,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase32_report.py",
+    "phase": 32,
+    "local_imports": []
+  },
+  {
+    "file": "phase32_run.py",
+    "phase": 32,
+    "local_imports": []
+  },
+  {
+    "file": "phase33_eval_watch.py",
+    "phase": 33,
+    "local_imports": []
+  },
+  {
+    "file": "phase33_evaluate.py",
+    "phase": 33,
+    "local_imports": [
+      "phase26_reconstruction",
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase33_run.py",
+    "phase": 33,
+    "local_imports": []
+  },
+  {
+    "file": "phase33_summary.py",
+    "phase": 33,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase33_train.py",
+    "phase": 33,
+    "local_imports": [
+      "phase21_full_encoder"
+    ]
+  },
+  {
+    "file": "phase33_validate.py",
+    "phase": 33,
+    "local_imports": [
+      "phase33_train"
+    ]
+  },
+  {
+    "file": "phase34_observability.py",
+    "phase": 34,
+    "local_imports": [
+      "common",
+      "phase24_observability"
+    ]
+  },
+  {
+    "file": "phase34_pulses.py",
+    "phase": 34,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase34_report.py",
+    "phase": 34,
+    "local_imports": []
+  },
+  {
+    "file": "phase34_run.py",
+    "phase": 34,
+    "local_imports": []
+  },
+  {
+    "file": "phase35_36_summary.py",
+    "phase": 35,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase35_head_train.py",
+    "phase": 35,
+    "local_imports": [
+      "phase21_full_encoder",
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase35_run.py",
+    "phase": 35,
+    "local_imports": []
+  },
+  {
+    "file": "phase36_plot.py",
+    "phase": 36,
+    "local_imports": []
+  },
+  {
+    "file": "phase36_pulses.py",
+    "phase": 36,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase35_head_train"
+    ]
+  },
+  {
+    "file": "phase36_run.py",
+    "phase": 36,
+    "local_imports": []
+  },
+  {
+    "file": "phase37_run.py",
+    "phase": 37,
+    "local_imports": []
+  },
+  {
+    "file": "phase37_screen.py",
+    "phase": 37,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase37_summary.py",
+    "phase": 37,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase38_head_train.py",
+    "phase": 38,
+    "local_imports": [
+      "phase21_full_encoder",
+      "phase28_joint_train"
+    ]
+  },
+  {
+    "file": "phase38_run.py",
+    "phase": 38,
+    "local_imports": []
+  },
+  {
+    "file": "phase38_screen.py",
+    "phase": 38,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase38_stage_analysis.py",
+    "phase": 38,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase38_summary.py",
+    "phase": 38,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase39_entropy_screen.py",
+    "phase": 39,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph"
+    ]
+  },
+  {
+    "file": "phase39_run.py",
+    "phase": 39,
+    "local_imports": []
+  },
+  {
+    "file": "phase39_select.py",
+    "phase": 39,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase3_evaluate.py",
+    "phase": 3,
+    "local_imports": [
+      "common",
+      "phase2_head",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase3_run_train.py",
+    "phase": 3,
+    "local_imports": []
+  },
+  {
+    "file": "phase3_summarize.py",
+    "phase": 3,
+    "local_imports": []
+  },
+  {
+    "file": "phase3_train.py",
+    "phase": 3,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase40_evaluate.py",
+    "phase": 40,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase40_run.py",
+    "phase": 40,
+    "local_imports": []
+  },
+  {
+    "file": "phase40_summary.py",
+    "phase": 40,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase41_feature_audit.py",
+    "phase": 41,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase41_observability.py",
+    "phase": 41,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase41_pulses.py",
+    "phase": 41,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase41_report.py",
+    "phase": 41,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase41_run.py",
+    "phase": 41,
+    "local_imports": []
+  },
+  {
+    "file": "phase42_balanced_utility.py",
+    "phase": 42,
+    "local_imports": [
+      "common",
+      "phase41_observability"
+    ]
+  },
+  {
+    "file": "phase42_run.py",
+    "phase": 42,
+    "local_imports": []
+  },
+  {
+    "file": "phase43_analysis_run.py",
+    "phase": 43,
+    "local_imports": []
+  },
+  {
+    "file": "phase43_diversity.py",
+    "phase": 43,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase43_feature_audit.py",
+    "phase": 43,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase43_pulses.py",
+    "phase": 43,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase43_run.py",
+    "phase": 43,
+    "local_imports": []
+  },
+  {
+    "file": "phase44_student_diagnostic.py",
+    "phase": 44,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase44_student_diagnostic_v1.py",
+    "phase": 44,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase45_gate.py",
+    "phase": 45,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase2_temporal",
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase45_run.py",
+    "phase": 45,
+    "local_imports": []
+  },
+  {
+    "file": "phase45_static_matched.py",
+    "phase": 45,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase45_summary.py",
+    "phase": 45,
+    "local_imports": [
+      "common",
+      "phase28_joint_train",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase46_spectral_head.py",
+    "phase": 46,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase47_pulses.py",
+    "phase": 47,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase46_spectral_head"
+    ]
+  },
+  {
+    "file": "phase47_run.py",
+    "phase": 47,
+    "local_imports": []
+  },
+  {
+    "file": "phase47_summary.py",
+    "phase": 47,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase48_gradient_groups.py",
+    "phase": 48,
+    "local_imports": [
+      "phase46_spectral_head",
+      "phase47_pulses"
+    ]
+  },
+  {
+    "file": "phase48_run.py",
+    "phase": 48,
+    "local_imports": []
+  },
+  {
+    "file": "phase48_summary.py",
+    "phase": 48,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase49_run.py",
+    "phase": 49,
+    "local_imports": []
+  },
+  {
+    "file": "phase49_scope_replay.py",
+    "phase": 49,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase46_spectral_head",
+      "phase47_pulses"
+    ]
+  },
+  {
+    "file": "phase49_summary.py",
+    "phase": 49,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase4_controls.py",
+    "phase": 4,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase4_features.py",
+    "phase": 4,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase4_report.py",
+    "phase": 4,
+    "local_imports": []
+  },
+  {
+    "file": "phase4_summary.py",
+    "phase": 4,
+    "local_imports": []
+  },
+  {
+    "file": "phase50_run.py",
+    "phase": 50,
+    "local_imports": []
+  },
+  {
+    "file": "phase50_scope_online.py",
+    "phase": 50,
+    "local_imports": [
+      "phase2_temporal",
+      "phase30_masked_graph",
+      "phase46_spectral_head",
+      "phase47_pulses"
+    ]
+  },
+  {
+    "file": "phase50_stability.py",
+    "phase": 50,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase50_static_matched.py",
+    "phase": 50,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase50_summary.py",
+    "phase": 50,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase51_feature_audit.py",
+    "phase": 51,
+    "local_imports": [
+      "phase32_feature_audit",
+      "phase51_pulses"
+    ]
+  },
+  {
+    "file": "phase51_graph_audit.py",
+    "phase": 51,
+    "local_imports": [
+      "phase50_scope_online"
+    ]
+  },
+  {
+    "file": "phase51_observability.py",
+    "phase": 51,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase51_pulses.py",
+    "phase": 51,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen",
+      "phase50_scope_online"
+    ]
+  },
+  {
+    "file": "phase51_run.py",
+    "phase": 51,
+    "local_imports": []
+  },
+  {
+    "file": "phase52_evaluate.py",
+    "phase": 52,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase52_meta_head"
+    ]
+  },
+  {
+    "file": "phase52_evaluation_run.py",
+    "phase": 52,
+    "local_imports": []
+  },
+  {
+    "file": "phase52_meta_head.py",
+    "phase": 52,
+    "local_imports": [
+      "phase46_spectral_head",
+      "phase47_pulses"
+    ]
+  },
+  {
+    "file": "phase52_run.py",
+    "phase": 52,
+    "local_imports": []
+  },
+  {
+    "file": "phase52_summary.py",
+    "phase": 52,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase52_task_gradient_audit.py",
+    "phase": 52,
+    "local_imports": [
+      "phase52_meta_head"
+    ]
+  },
+  {
+    "file": "phase52_transitions.py",
+    "phase": 52,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase53_online.py",
+    "phase": 53,
+    "local_imports": [
+      "phase2_temporal",
+      "phase46_spectral_head",
+      "phase50_scope_online",
+      "phase52_evaluate"
+    ]
+  },
+  {
+    "file": "phase53_run.py",
+    "phase": 53,
+    "local_imports": []
+  },
+  {
+    "file": "phase53_stage_analysis.py",
+    "phase": 53,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase53_static.py",
+    "phase": 53,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase53_summary.py",
+    "phase": 53,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase54_feature_audit.py",
+    "phase": 54,
+    "local_imports": [
+      "phase32_feature_audit",
+      "phase54_pulses"
+    ]
+  },
+  {
+    "file": "phase54_observability.py",
+    "phase": 54,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase54_pulses.py",
+    "phase": 54,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen",
+      "phase50_scope_online",
+      "phase52_evaluate"
+    ]
+  },
+  {
+    "file": "phase54_run.py",
+    "phase": 54,
+    "local_imports": []
+  },
+  {
+    "file": "phase55_full_zero_audit.py",
+    "phase": 55,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase2_temporal",
+      "phase46_spectral_head",
+      "phase52_evaluate"
+    ]
+  },
+  {
+    "file": "phase55_run.py",
+    "phase": 55,
+    "local_imports": []
+  },
+  {
+    "file": "phase55_small_lr.py",
+    "phase": 55,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase53_online"
+    ]
+  },
+  {
+    "file": "phase55_summary.py",
+    "phase": 55,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase56_matched_states.py",
+    "phase": 56,
+    "local_imports": [
+      "phase54_pulses"
+    ]
+  },
+  {
+    "file": "phase56_run.py",
+    "phase": 56,
+    "local_imports": []
+  },
+  {
+    "file": "phase56_summary.py",
+    "phase": 56,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase57_evaluate.py",
+    "phase": 57,
+    "local_imports": [
+      "phase54_pulses",
+      "phase57_factorial_meta"
+    ]
+  },
+  {
+    "file": "phase57_evaluation_run.py",
+    "phase": 57,
+    "local_imports": []
+  },
+  {
+    "file": "phase57_factorial_meta.py",
+    "phase": 57,
+    "local_imports": [
+      "phase52_meta_head"
+    ]
+  },
+  {
+    "file": "phase57_run.py",
+    "phase": 57,
+    "local_imports": []
+  },
+  {
+    "file": "phase57_state_pool.py",
+    "phase": 57,
+    "local_imports": [
+      "phase54_pulses"
+    ]
+  },
+  {
+    "file": "phase57_summary.py",
+    "phase": 57,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase58_metric_oracles.py",
+    "phase": 58,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase59_feature_audit.py",
+    "phase": 59,
+    "local_imports": [
+      "phase32_feature_audit",
+      "phase59_pulses"
+    ]
+  },
+  {
+    "file": "phase59_observability.py",
+    "phase": 59,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase59_pulses.py",
+    "phase": 59,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen",
+      "phase50_scope_online",
+      "phase52_evaluate",
+      "phase55_small_lr"
+    ]
+  },
+  {
+    "file": "phase59_run.py",
+    "phase": 59,
+    "local_imports": []
+  },
+  {
+    "file": "phase5_balanced.py",
+    "phase": 5,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase5_context_adapt.py",
+    "phase": 5,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase5_summary.py",
+    "phase": 5,
+    "local_imports": []
+  },
+  {
+    "file": "phase60_memory_controls.py",
+    "phase": 60,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase55_small_lr"
+    ]
+  },
+  {
+    "file": "phase60_plot.py",
+    "phase": 60,
+    "local_imports": []
+  },
+  {
+    "file": "phase60_run.py",
+    "phase": 60,
+    "local_imports": []
+  },
+  {
+    "file": "phase60_summary.py",
+    "phase": 60,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase61_evaluate.py",
+    "phase": 61,
+    "local_imports": [
+      "phase52_evaluate",
+      "phase55_small_lr"
+    ]
+  },
+  {
+    "file": "phase61_evaluation_run.py",
+    "phase": 61,
+    "local_imports": []
+  },
+  {
+    "file": "phase61_meta_head.py",
+    "phase": 61,
+    "local_imports": [
+      "phase46_spectral_head",
+      "phase47_pulses"
+    ]
+  },
+  {
+    "file": "phase61_plot.py",
+    "phase": 61,
+    "local_imports": []
+  },
+  {
+    "file": "phase61_summary.py",
+    "phase": 61,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase61_train_run.py",
+    "phase": 61,
+    "local_imports": []
+  },
+  {
+    "file": "phase62_reconstruction.py",
+    "phase": 62,
+    "local_imports": []
+  },
+  {
+    "file": "phase62_summary.py",
+    "phase": 62,
+    "local_imports": []
+  },
+  {
+    "file": "phase63_features.py",
+    "phase": 63,
+    "local_imports": [
+      "phase62_reconstruction"
+    ]
+  },
+  {
+    "file": "phase63_probe.py",
+    "phase": 63,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase63_summary.py",
+    "phase": 63,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase64_feature_audit.py",
+    "phase": 64,
+    "local_imports": [
+      "phase32_feature_audit",
+      "phase64_pulses"
+    ]
+  },
+  {
+    "file": "phase64_observability.py",
+    "phase": 64,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase64_pulses.py",
+    "phase": 64,
+    "local_imports": [
+      "phase29_forward_graph",
+      "phase30_masked_graph",
+      "phase37_screen",
+      "phase50_scope_online",
+      "phase52_evaluate",
+      "phase55_small_lr"
+    ]
+  },
+  {
+    "file": "phase64_run.py",
+    "phase": 64,
+    "local_imports": []
+  },
+  {
+    "file": "phase65_plot.py",
+    "phase": 65,
+    "local_imports": []
+  },
+  {
+    "file": "phase65_run.py",
+    "phase": 65,
+    "local_imports": []
+  },
+  {
+    "file": "phase65_static.py",
+    "phase": 65,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase65_summary.py",
+    "phase": 65,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase66_run.py",
+    "phase": 66,
+    "local_imports": []
+  },
+  {
+    "file": "phase66_summary.py",
+    "phase": 66,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase66_train.py",
+    "phase": 66,
+    "local_imports": [
+      "common",
+      "phase2_temporal",
+      "phase62_reconstruction"
+    ]
+  },
+  {
+    "file": "phase67_run.py",
+    "phase": 67,
+    "local_imports": []
+  },
+  {
+    "file": "phase67_static.py",
+    "phase": 67,
+    "local_imports": [
+      "phase30_masked_graph",
+      "phase37_screen"
+    ]
+  },
+  {
+    "file": "phase67_summary.py",
+    "phase": 67,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase68_reconstruction.py",
+    "phase": 68,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase68_summary.py",
+    "phase": 68,
+    "local_imports": []
+  },
+  {
+    "file": "phase69_pulses.py",
+    "phase": 69,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase69_run.py",
+    "phase": 69,
+    "local_imports": []
+  },
+  {
+    "file": "phase69_summary.py",
+    "phase": 69,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase6_download.py",
+    "phase": 6,
+    "local_imports": []
+  },
+  {
+    "file": "phase6_eval.py",
+    "phase": 6,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase6_final_audit.py",
+    "phase": 6,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase6_lock.py",
+    "phase": 6,
+    "local_imports": [
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase6_prepare.py",
+    "phase": 6,
+    "local_imports": []
+  },
+  {
+    "file": "phase6_run.py",
+    "phase": 6,
+    "local_imports": []
+  },
+  {
+    "file": "phase6_source_cache.py",
+    "phase": 6,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase6_summary.py",
+    "phase": 6,
+    "local_imports": []
+  },
+  {
+    "file": "phase70_evaluate.py",
+    "phase": 70,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase70_stages.py",
+    "phase": 70,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase70_summary.py",
+    "phase": 70,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase71_evaluate.py",
+    "phase": 71,
+    "local_imports": [
+      "phase70_evaluate"
+    ]
+  },
+  {
+    "file": "phase71_run.py",
+    "phase": 71,
+    "local_imports": []
+  },
+  {
+    "file": "phase71_summary.py",
+    "phase": 71,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase71_train.py",
+    "phase": 71,
+    "local_imports": [
+      "common",
+      "phase2_temporal",
+      "phase62_reconstruction"
+    ]
+  },
+  {
+    "file": "phase72_fit.py",
+    "phase": 72,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase72_summary.py",
+    "phase": 72,
+    "local_imports": []
+  },
+  {
+    "file": "phase72_validate.py",
+    "phase": 72,
+    "local_imports": [
+      "phase72_fit"
+    ]
+  },
+  {
+    "file": "phase73_pulses.py",
+    "phase": 73,
+    "local_imports": [
+      "phase69_pulses"
+    ]
+  },
+  {
+    "file": "phase73_summary.py",
+    "phase": 73,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase74_gradients.py",
+    "phase": 74,
+    "local_imports": [
+      "phase69_pulses"
+    ]
+  },
+  {
+    "file": "phase74_summary.py",
+    "phase": 74,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase75_pulses.py",
+    "phase": 75,
+    "local_imports": [
+      "phase69_pulses"
+    ]
+  },
+  {
+    "file": "phase75_summary.py",
+    "phase": 75,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase76_download.py",
+    "phase": 76,
+    "local_imports": []
+  },
+  {
+    "file": "phase76_prepare.py",
+    "phase": 76,
+    "local_imports": []
+  },
+  {
+    "file": "phase77_labels.py",
+    "phase": 77,
+    "local_imports": []
+  },
+  {
+    "file": "phase77_predict.py",
+    "phase": 77,
+    "local_imports": [
+      "common",
+      "phase21_full_encoder",
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase77_summary.py",
+    "phase": 77,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase78_amplitude.py",
+    "phase": 78,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict"
+    ]
+  },
+  {
+    "file": "phase78_summary.py",
+    "phase": 78,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase79_amplitude.py",
+    "phase": 79,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict"
+    ]
+  },
+  {
+    "file": "phase79_plot.py",
+    "phase": 79,
+    "local_imports": []
+  },
+  {
+    "file": "phase79_summary.py",
+    "phase": 79,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase7_source_screen.py",
+    "phase": 7,
+    "local_imports": [
+      "adaptation",
+      "common",
+      "controllers"
+    ]
+  },
+  {
+    "file": "phase80_features.py",
+    "phase": 80,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict",
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase80_summary.py",
+    "phase": 80,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase80_t3a.py",
+    "phase": 80,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase81_amplitude_risk.py",
+    "phase": 81,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict",
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase81_summary.py",
+    "phase": 81,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase82_summary.py",
+    "phase": 82,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase82_t3a_identity.py",
+    "phase": 82,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase83_labels.py",
+    "phase": 83,
+    "local_imports": [
+      "phase83_prepare"
+    ]
+  },
+  {
+    "file": "phase83_predict.py",
+    "phase": 83,
+    "local_imports": [
+      "phase76_prepare",
+      "phase77_predict",
+      "phase78_amplitude",
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase83_prepare.py",
+    "phase": 83,
+    "local_imports": [
+      "phase76_prepare"
+    ]
+  },
+  {
+    "file": "phase83_summary.py",
+    "phase": 83,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase84_cross_cohort.py",
+    "phase": 84,
+    "local_imports": []
+  },
+  {
+    "file": "phase85_eegnet.py",
+    "phase": 85,
+    "local_imports": [
+      "common",
+      "phase79_amplitude"
+    ]
+  },
+  {
+    "file": "phase85_summary.py",
+    "phase": 85,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase86_meta_waveform.py",
+    "phase": 86,
+    "local_imports": [
+      "phase69_pulses"
+    ]
+  },
+  {
+    "file": "phase86_run.py",
+    "phase": 86,
+    "local_imports": []
+  },
+  {
+    "file": "phase86_summary.py",
+    "phase": 86,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase87_evaluate.py",
+    "phase": 87,
+    "local_imports": [
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase87_summary.py",
+    "phase": 87,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase88_fixed_direction.py",
+    "phase": 88,
+    "local_imports": [
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase88_summary.py",
+    "phase": 88,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase89_static_controls.py",
+    "phase": 89,
+    "local_imports": [
+      "phase2_temporal",
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase89_summary.py",
+    "phase": 89,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase8_methods.py",
+    "phase": 8,
+    "local_imports": [
+      "adaptation",
+      "common"
+    ]
+  },
+  {
+    "file": "phase8_run.py",
+    "phase": 8,
+    "local_imports": []
+  },
+  {
+    "file": "phase8_screen.py",
+    "phase": 8,
+    "local_imports": [
+      "common",
+      "phase6_eval",
+      "phase8_methods"
+    ]
+  },
+  {
+    "file": "phase90_audit.py",
+    "phase": 90,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase90_constrain.py",
+    "phase": 90,
+    "local_imports": [
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase91_evaluate.py",
+    "phase": 91,
+    "local_imports": [
+      "phase86_meta_waveform"
+    ]
+  },
+  {
+    "file": "phase91_summary.py",
+    "phase": 91,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase92_figures.py",
+    "phase": 92,
+    "local_imports": []
+  },
+  {
+    "file": "phase93_amplitude_head.py",
+    "phase": 93,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase93_summary.py",
+    "phase": 93,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "phase94_full_amplitude.py",
+    "phase": 94,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase94_summary.py",
+    "phase": 94,
+    "local_imports": [
+      "phase94_full_amplitude"
+    ]
+  },
+  {
+    "file": "phase95_static_targets.py",
+    "phase": 95,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase95_summary.py",
+    "phase": 95,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase96_full_amplitude.py",
+    "phase": 96,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase96_run.py",
+    "phase": 96,
+    "local_imports": []
+  },
+  {
+    "file": "phase96_summary.py",
+    "phase": 96,
+    "local_imports": [
+      "phase96_full_amplitude"
+    ]
+  },
+  {
+    "file": "phase97_static_targets.py",
+    "phase": 97,
+    "local_imports": [
+      "phase66_train"
+    ]
+  },
+  {
+    "file": "phase97_summary.py",
+    "phase": 97,
+    "local_imports": [
+      "common",
+      "phase2_temporal"
+    ]
+  },
+  {
+    "file": "phase98_montage_amplitude.py",
+    "phase": 98,
+    "local_imports": [
+      "phase76_prepare"
+    ]
+  },
+  {
+    "file": "phase99_covariance.py",
+    "phase": 99,
+    "local_imports": []
+  },
+  {
+    "file": "phase9_fresh.py",
+    "phase": 9,
+    "local_imports": [
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase9_label_access.py",
+    "phase": 9,
+    "local_imports": [
+      "common",
+      "phase6_eval"
+    ]
+  },
+  {
+    "file": "phase9_summary.py",
+    "phase": 9,
+    "local_imports": []
+  },
+  {
+    "file": "policy_diagnostics.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "prepare.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "research_overview.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "resume_all.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_additional_seeds.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_cnn_head_probe.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "run_evaluation.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_head_probe.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "run_identity_control.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_lr_sensitivity.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_numerical_audit.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_policy_diagnostics.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_stress.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_supplement.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "run_training.py",
+    "phase": 0,
+    "local_imports": []
+  },
+  {
+    "file": "stress.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "supplement.py",
+    "phase": 0,
+    "local_imports": [
+      "adaptation",
+      "controllers"
+    ]
+  },
+  {
+    "file": "train.py",
+    "phase": 0,
+    "local_imports": [
+      "common"
+    ]
+  },
+  {
+    "file": "train_remaining.py",
+    "phase": 0,
+    "local_imports": []
+  }
+]

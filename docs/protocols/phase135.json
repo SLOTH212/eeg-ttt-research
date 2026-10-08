@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-06T09:25:52.251380+00:00",
+  "train": [
+    0,
+    1,
+    2,
+    10,
+    11,
+    20,
+    21,
+    30,
+    31,
+    32
+  ],
+  "validation": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "variants": [
+    "current",
+    "repeat11",
+    "history11"
+  ],
+  "parents": [
+    {
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_17/model.pt",
+      "sha256": "17fae4eb65473ecf803e76f75a1d8b75dfd9c58011af5d36d46117d041f285bf",
+      "source_selected_epoch": 25,
+      "source_val_f1": 0.5244065437351199
+    },
+    {
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_29/model.pt",
+      "sha256": "c6d299b9cb112921d9f968363cd1e840cf7132884f98e00e3bd21b2b163588de",
+      "source_selected_epoch": 21,
+      "source_val_f1": 0.5370557963469088
+    },
+    {
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_43/model.pt",
+      "sha256": "43ad99c406991a621ede7782f66761f1cc92525907c5681f3d919e910ed0113f",
+      "source_selected_epoch": 13,
+      "source_val_f1": 0.5442029580012904
+    }
+  ],
+  "fixed_recipe_reference_sha256": "fd535b803f1f4b9a8f083782c46062bcb602362fbcde99f75070b8d182d85d72",
+  "residual_implementation_sha256": "aad534fa5ae41038f8b825ba9e1c1d543fb737ac5772a9ac68048f6c420dd0fe",
+  "features": "Frozen existing EEGNet-style5class pre-softmaxlogits, subtract samewindow classmean for translationinvariance. Current5dim, repeatcurrent11times55dim, orcurrent+past10windows55dim; edgepad atstart. No labels in features.",
+  "architecture": "Residual SpectralNet64/32 BN/ELU/dropout.25, source-onlymean/std floor.1. Add MLPoutput to originalcurrent centeredlogits. Lastlinear initializedexactzero, soepoch0 equalsparent. Repeat/history55dim have identicalinitial trainableparameters.",
+  "training": "30epochs,AdamWlr.001wd.001,batch128,sqrtinverseclassweights normalizedmean1; same dedicated seedpermutations and dropout seed100000+seed afterconstructor. Parent frozen, onlyresidualheadtrained.",
+  "selection": "Earliest best rawmean4sourceMacroF1 amongepoch0..30 withnativeguards: meanwithin1pp and eachpersonwithin2pp of parent. Epoch0fallback. EMAsecondaryonly.",
+  "advance": "Onlyconsider existingtargetexploratoryreplication if3seed-mean withinperson history selected beats bothrepeat11 andfrozen mean, history-repeat positive inatleast3/4sourcepeople, allsource/checkpoint/prefixauditsPASS. No online or target adaptation; failedgate means no targetinference.",
+  "scope": "Sourcepeoplealreadyobserved; extra30headepochs supervisedlabels and frozenparenttrainingbudget disclosed. Static causalreadout, notTTT or teacher distillation; no newrawsamples. Historical common.EEGNet is EEGNet-style8,2 with adaptive pooling8, not exactofficial reproduction. Parent encoder training differs from foundationmodels, so comparison is practical baseline, notcausal pretraining ablation.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

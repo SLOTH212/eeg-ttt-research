@@ -1,0 +1,10 @@
+# Recorded Linux/Python3.11.15 environment; original torch 2.8.0+cu128.
+# Select the CPU/CUDA torch distribution for your hardware separately.
+torch==2.8.0
+numpy==2.4.4
+scipy==1.17.1
+pandas==3.0.5
+scikit-learn==1.9.1
+matplotlib==3.11.2
+pyedflib==0.1.42
+requests==2.34.2

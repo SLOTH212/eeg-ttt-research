@@ -1,0 +1,52 @@
+{
+  "purpose": "Audit official CBraMod retained waveform reconstruction head on existing native two-channel SleepEDF; no fitted auxiliary or classifier, no labels used.",
+  "source_validation_subjects": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "samples_per_subject": 96,
+  "indices": "linspace0..N-1, no label filtering or stage selection",
+  "primary_preprocessing": "Existing centered/clipped units of100microvolts; per-current30s fourth-order0.1-45Hz bandpass at100Hz then polyphase upsample200Hz, shape2x30x200. No further /100.",
+  "secondary_preprocessing": "0.3-35Hz per-current30s fourth-order bandpass then upsample; diagnostic closer to official sleep passband, not exact original whole-record FIR processing.",
+  "masks": "Primary Bernoulli0.5 CPU generator seed62000+sid; fixed saved matrix96x2x30. Secondary alternating checkerboard paritychannel+second. No future30s labels or samples.",
+  "comparisons": [
+    "masked-target waveform MSE",
+    "zero prediction MSE",
+    "same current visible patches channelwise200-point mean template",
+    "input shuffled across96 sampled windows with identical destination mask",
+    "unmasked reconstruction diagnostic"
+  ],
+  "audits": [
+    "strict pretrained state load including proj_out",
+    "source weights unchanged",
+    "masked raw perturbation leaves prediction unchanged",
+    "other-batch-sample perturbation leaves first prediction unchanged",
+    "perwindow preprocessing matches batched processing"
+  ],
+  "primary_validity": "Primary preprocessing+Bernoulli beats zero and shuffled on each of4source people; report visible-template separately. No classification or online learning inference.",
+  "training": false,
+  "target_rollout": false,
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": 0,
+  "official_source": "b9e961003214326972c567eff390e75b0287e32a",
+  "created_utc": "2026-10-06T01:18:10.293298+00:00"
+}

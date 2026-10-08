@@ -1,0 +1,9 @@
+<!doctype html><meta charset="utf-8"><title>第三方来源</title><style>body{font:16px/1.8 sans-serif;max-width:1100px;margin:35px auto}td,th{border:1px solid #ccc;padding:8px;overflow-wrap:anywhere}table{border-collapse:collapse}</style>
+<h1>第三方来源与复现登记</h1><p>下列上游实现、数据和权重均未随本仓库分发。请按来源的许可与获取流程单独取得；此登记不授予额外许可。</p>
+<table><tr><th>来源</th><th>原记录与用途</th></tr>
+<tr><td><a href="https://physionet.org/content/sleep-edfx/1.0.0/">Sleep-EDF Expanded 1.0.0</a></td><td>源训练与同库目标，拆分见pilot配置与各阶段协议。</td></tr>
+<tr><td><a href="https://sleeptight.isr.uc.pt/">ISRUC-Sleep</a></td><td>官方外部健康/患者EEG与标注。输入镜像另在准备脚本登记。</td></tr>
+<tr><td><a href="https://github.com/wjq-learning/CBraMod">CBraMod</a></td><td>revision b9e961003214326972c567eff390e75b0287e32a；phase62/upstream；原权重 SHA256 0792cb808c14e6b7a2bb2ce1dff379bc47bc54c49a779825bdfeb33bf8157178。</td></tr>
+<tr><td><a href="https://github.com/935963004/LaBraM">LaBraM</a></td><td>revision c431221e6cfd23dbfa9950e0180682fb322b0548；原检查点 SHA256 7c50583826afac76c4ab18f43d958df40496c8229accc09ed6a227c9bb57c37c。布局见phase14协议与源码。</td></tr>
+<tr><td><a href="https://github.com/vlawhern/arl-eegmodels">EEGNet架构参考</a></td><td>Lawhern等（2018）。common.EEGNet采用kernel51与adaptive pool8，为EEGNet-style，不是官方精确复现。</td></tr></table>
+<p>私人项目建议书、上游源码、第三方下载文件未再分发。此研究代码快照暂未指定新的开源许可证。</p>

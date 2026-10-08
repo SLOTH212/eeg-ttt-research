@@ -1,0 +1,28 @@
+{
+  "research_status": "PAUSED_BY_USER",
+  "research_cutoff": "2026-10-06",
+  "publication_date": "2026-10-08",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu_authorized_for_future_resume": true,
+  "publication_only": true,
+  "source_files": 452,
+  "source_files_changed": 18,
+  "data_and_weights_included": false
+}

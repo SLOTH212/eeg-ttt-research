@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "streams": 30,
+  "windows": 40428,
+  "labels_not_read": true,
+  "no_updates": true,
+  "joint_resume_exact": true,
+  "reset_exact": true,
+  "max_parent_error": 1.6093254089355469e-06,
+  "max_history_error": 1.7881393432617188e-06,
+  "max_ema_error": 1.6093254089355469e-06,
+  "total_argmax_differences": 0
+}

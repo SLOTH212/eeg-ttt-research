@@ -1,0 +1,135 @@
+[
+  {
+    "phase": 3,
+    "original_sha256": "1fec6408e6644741e428fd37285d38ebd4181e4a501cdc6cf4db07b8c2bc5882",
+    "published_sha256": "1fec6408e6644741e428fd37285d38ebd4181e4a501cdc6cf4db07b8c2bc5882",
+    "path": "docs/protocols/phase3.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 14,
+    "original_sha256": "62a0fb105588ab7047378f0c1a9b9acc3e0aff6a193e8ed04c8f5de7a5ae5e96",
+    "published_sha256": "62a0fb105588ab7047378f0c1a9b9acc3e0aff6a193e8ed04c8f5de7a5ae5e96",
+    "path": "docs/protocols/phase14.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 62,
+    "original_sha256": "d47d390490de64ae1017829e3e673ef334d4ddceef81dd6a8d19f3445c92ac89",
+    "published_sha256": "d47d390490de64ae1017829e3e673ef334d4ddceef81dd6a8d19f3445c92ac89",
+    "path": "docs/protocols/phase62.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 79,
+    "original_sha256": "c810542a097b7f1e67b4b5892a4395db3160bc6dc4bbdf9568047688fe8ba8a2",
+    "published_sha256": "b53aa3aea39b509efd7a607d0d6fb72997c9c8147a92060a20013b5927e48acc",
+    "path": "docs/protocols/phase79.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 85,
+    "original_sha256": "799904200ef2394eb99ea0bd770169e9c9a9731d35c68aa5edf8190bf0ba198a",
+    "published_sha256": "fc176f4e3165618945ad93dbb0407a1535749a714f1d811c48619217c93710ff",
+    "path": "docs/protocols/phase85.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 100,
+    "original_sha256": "b5ec5381bf00aa9c83328ca23cdb62ec6f1f884580fe90b5065e634e7a1ca1be",
+    "published_sha256": "333733f1d69014c1beaaf1cd21ad52623c270933e13ed08b753d4bbde12c0e85",
+    "path": "docs/protocols/phase100.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 101,
+    "original_sha256": "7cea97ca2c16e0f114cf94993229f1f093edb1a072d971ec3579d33ca99803cf",
+    "published_sha256": "c0b39e5c739e3b60363078185d7b76ee0fa0c4068d3b308610ddf30592b4007f",
+    "path": "docs/protocols/phase101.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 114,
+    "original_sha256": "014327169d423a0465cd2bdeb05b2ff7c81887827d6a87f6d6d770e493984808",
+    "published_sha256": "13f07a44480ad8a55570e52cb860a44097f673c2e6923058606cac98ffc850a7",
+    "path": "docs/protocols/phase114.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 119,
+    "original_sha256": "fd535b803f1f4b9a8f083782c46062bcb602362fbcde99f75070b8d182d85d72",
+    "published_sha256": "e40f637d450fb7dc835f9f1b6773b1c6752a977a83f26c4d00980ecf75c19ab1",
+    "path": "docs/protocols/phase119.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 120,
+    "original_sha256": "d340bbdf32d53152ccba191eac76c160f5cc375baa3da061e2fbf58689bd02a5",
+    "published_sha256": "e825ffa12ac0353316488f5969b6d21d5d2e9827e589d011dbf3a072735eb0a4",
+    "path": "docs/protocols/phase120.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 121,
+    "original_sha256": "b8b043b31622cfec32e05933635957d00ecc6d75aac2cbedef69e56f160087cd",
+    "published_sha256": "399eeb6316051aab79b9ba158d7cfdb3e3a1dc80a73cad049f242bb818f9e2f5",
+    "path": "docs/protocols/phase121.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 123,
+    "original_sha256": "8c27797401edb99861521a0cd8148a7b5f06a0270a7ce6389416d0e7a43877b0",
+    "published_sha256": "39d9e211f554367fe5b16f07c415cedb33a4900a2e98ce509e4287c0ea4da6df",
+    "path": "docs/protocols/phase123.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 126,
+    "original_sha256": "df51c02c187d28d93f9df312b6cf0f6420f22712f399d2bfc232d80be771c11b",
+    "published_sha256": "0335b0598a0e51adc29a5a43ec5fdddb14e79e4bdc0acd29984edf2c9959bc6a",
+    "path": "docs/protocols/phase126.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 130,
+    "original_sha256": "ce7ffb1af4c981f51b512eff56d189809fb151debf39dba3aeb53a59bc99e1fd",
+    "published_sha256": "d80948d6fa32206d6bfad39ab7ff6a752f550a009e868e8387dda8a91591bf90",
+    "path": "docs/protocols/phase130.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 131,
+    "original_sha256": "52eeacb1b753ed5787831660bff2fb371b78ad9b4bd4f1b054d2576ef261d9d3",
+    "published_sha256": "0d2bd85ab6deb15c167e578d94f67dc71bd6b9389a10d87e2ec8335e1ff9d3a6",
+    "path": "docs/protocols/phase131.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 133,
+    "original_sha256": "07178a0f5792c1d4c5ffa67daeb4fab9ef08b5bc63c76be926babc6cb27facfd",
+    "published_sha256": "044114885b135de9df4d29dd596b8d4ce78e801cdfed9ee1688877cb080d9960",
+    "path": "docs/protocols/phase133.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 135,
+    "original_sha256": "8c5d87fb2b3f86a4285982c43f329bd7fd73480c51ac93655057ead243204f9b",
+    "published_sha256": "c18e23eb62b933534c0b3c22dd620f89ab6adb6abf22078f842d205969202e8f",
+    "path": "docs/protocols/phase135.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 136,
+    "original_sha256": "6f48f138610a12d5d8ff6428d9ccd7c99bac5c67a9c1045797d62b4ce2289699",
+    "published_sha256": "ce35e054f6f0486285a02401a755df1ee3b17d034def807c38409191b1f9ce5d",
+    "path": "docs/protocols/phase136.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  },
+  {
+    "phase": 138,
+    "original_sha256": "d6a097de96a08c851618f4bedff6372237eb9abf046bed02e5618a9ed0f50fce",
+    "published_sha256": "ccb0a6001ec11affe56feff03e9bc41dddea899ed70a3f322cc291210e324b2f",
+    "path": "docs/protocols/phase138.json",
+    "note": "Read-only snapshot; root replaced with placeholder, not an execution lock"
+  }
+]

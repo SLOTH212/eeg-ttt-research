@@ -1,0 +1,96 @@
+{
+  "cases": [
+    {
+      "case": {
+        "domain": "source",
+        "subject": "s05",
+        "montage": "native",
+        "x": "<PROJECT_ROOT>/data/processed/s05_x.npy",
+        "labels": "<PROJECT_ROOT>/data/processed/s05_meta.npz"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "healthy",
+        "subject": "sub-III001",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "healthy",
+        "subject": "sub-III001",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase76/processed/sub-III001_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase77/labels/sub-III001_y.npy"
+      },
+      "mode": "full"
+    },
+    {
+      "case": {
+        "domain": "patient",
+        "subject": "sub-I021",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+      },
+      "mode": "raw"
+    },
+    {
+      "case": {
+        "domain": "patient",
+        "subject": "sub-I021",
+        "montage": "left",
+        "x": "<PROJECT_ROOT>/phase83/processed/sub-I021_left_x.npy",
+        "labels": "<PROJECT_ROOT>/phase83/labels/sub-I021_y.npy"
+      },
+      "mode": "full"
+    }
+  ],
+  "parents": [
+    {
+      "seed": 17,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_17/model.pt",
+      "sha256": "17fae4eb65473ecf803e76f75a1d8b75dfd9c58011af5d36d46117d041f285bf",
+      "source_selected_epoch": 25,
+      "source_val_f1": 0.5244065437351199,
+      "model": "eegnet"
+    },
+    {
+      "seed": 29,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_29/model.pt",
+      "sha256": "c6d299b9cb112921d9f968363cd1e840cf7132884f98e00e3bd21b2b163588de",
+      "source_selected_epoch": 21,
+      "source_val_f1": 0.5370557963469088,
+      "model": "eegnet"
+    },
+    {
+      "seed": 43,
+      "path": "<PROJECT_ROOT>/phase3/results/eegnet_mixed_43/model.pt",
+      "sha256": "43ad99c406991a621ede7782f66761f1cc92525907c5681f3d919e910ed0113f",
+      "source_selected_epoch": 13,
+      "source_val_f1": 0.5442029580012904,
+      "model": "eegnet"
+    }
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "heads": "Original source selected phase135 EEGNet-style history11; CPU and GPU parent implementations",
+  "ema": 0.5,
+  "unit": "One already completed normalized two-lead 30second float32 2x3000 window; starts after EDF channel subtraction/resampling/centering/scaling. Not rawEDF acquisition validation.",
+  "checks": "Full records, one-window normalization/filtering/encoder/readout/EMA; cached batch gold only for comparison. Mid-record joint JSON resume and reset first16 steps bitwise. No labels or target updates.",
+  "tolerance_probability": 2e-05,
+  "scope": "Three fixed records chosen by first identifier within source, healthy and oldpatient cohorts, no outcome selection. Timing includes waveform preprocessing, CPU or GPU parent and CPU readout; excludes disk, cold start, acquisition and model loading.",
+  "implementation_hashes": {
+    "phase102_stream.py": "9a039d523fd7a974c3f01c1be231d86c0b96f5d68291ce27a271cf66d4b6f219",
+    "phase127_stream.py": "4405d6ccb283d724cdd7ed7ab6853646777b9fd2a6a3e841ab89ae0c78e4e276",
+    "phase138_eegnet_stream.py": "3a10bb940379857d8274ae4a46ac0199608a8791a9070e1858effb4e128e89f7"
+  }
+}

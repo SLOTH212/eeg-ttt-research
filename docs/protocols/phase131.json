@@ -1,0 +1,175 @@
+{
+  "created_utc": "2026-10-06T09:01:40.131849+00:00",
+  "purpose": "Fixed checkpoint-selector sensitivity on samecachedtargetinputs, evaluatingallalternate-selector heads andfallbacks.",
+  "sources": {
+    "cbramod": "phase120",
+    "labram": "phase123"
+  },
+  "heads": [
+    {
+      "backbone": "cbramod",
+      "seed": 17,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_current_seed17/model.pt",
+      "sha256": "445f9b02f98980c838db98cb83576a9b04cf03ca9a129d547cc3b5d58c52dc88"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 17,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_repeat11_seed17/model.pt",
+      "sha256": "921c54046688c1ccc13d5b6bf270114acdbef3cd5b74f8a1c1893c058f3e78c2"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 17,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_history11_seed17/model.pt",
+      "sha256": "5e818ffb78d83a54c86b20afeb69e28a7759aba217cd850b65ca8ddb3fccbe3c"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 29,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_current_seed29/model.pt",
+      "sha256": "e97923a783cdbe6ebb297ec087b8bcd1ec702613a3979742690535b9fbeb8620"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 29,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_repeat11_seed29/model.pt",
+      "sha256": "e3a5e7fab8d63100797604955194b322536c383e4516e9fb7a08a7028e622ef0"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 29,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_history11_seed29/model.pt",
+      "sha256": "94d5ff3ef3faa7f8d5abb162494a6e4023be37ab89058434540ca08d64d3898b"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 43,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_current_seed43/model.pt",
+      "sha256": "f578db33d986338ca0bb0e49ab93349964966817c82e68ec0ca8ade330910bb9"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 43,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_repeat11_seed43/model.pt",
+      "sha256": "2c0c0248ddd3d3d65bd23039d92bec98504264981fd5c03159c8511ef5e253b1"
+    },
+    {
+      "backbone": "cbramod",
+      "seed": 43,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/cbramod_history11_seed43/model.pt",
+      "sha256": "54b3e99009497dfef36536aaa5057a883457992ebbe1628eb93923993aeb99aa"
+    },
+    {
+      "backbone": "labram",
+      "seed": 17,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/labram_current_seed17/model.pt",
+      "sha256": "b755279aa8509efaddd1fdf5b342c322474ea65b6570f2d634ec68603f6ee6a4"
+    },
+    {
+      "backbone": "labram",
+      "seed": 17,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/labram_repeat11_seed17/model.pt",
+      "sha256": "27b48999ac0ef3927ecee882d2d5dbc3fe8578c28b672c13b0cb6be89441b899"
+    },
+    {
+      "backbone": "labram",
+      "seed": 17,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/labram_history11_seed17/model.pt",
+      "sha256": "aa5bbc1f9fcaf4f970c5806a86cd285d49cfec8a7120e1ce0fcd3c5ddeeed96a"
+    },
+    {
+      "backbone": "labram",
+      "seed": 29,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/labram_current_seed29/model.pt",
+      "sha256": "79bb39f125b95ec970cdaf9f924998313bc8d5d7fd30ca6ea90bb55d6e7112de"
+    },
+    {
+      "backbone": "labram",
+      "seed": 29,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/labram_repeat11_seed29/model.pt",
+      "sha256": "1f754c8d5f8bf199e9d3b46173741844912b821333ea74b47e4c17ebbd71a9da"
+    },
+    {
+      "backbone": "labram",
+      "seed": 29,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/labram_history11_seed29/model.pt",
+      "sha256": "4472d6bfdb21d09ef0c31a338f90a6ae067d738859fdecd41ab63fc469b58262"
+    },
+    {
+      "backbone": "labram",
+      "seed": 43,
+      "variant": "current",
+      "path": "<PROJECT_ROOT>/phase130/labram_current_seed43/model.pt",
+      "sha256": "075f801bc3840849cf04fc311cf82e13fb93659b240c111c7215947659fb70ae"
+    },
+    {
+      "backbone": "labram",
+      "seed": 43,
+      "variant": "repeat11",
+      "path": "<PROJECT_ROOT>/phase130/labram_repeat11_seed43/model.pt",
+      "sha256": "a533cab1c738cc447459d2d9283aa199b32b0f0a5f0a330a20fb0839c6386601"
+    },
+    {
+      "backbone": "labram",
+      "seed": 43,
+      "variant": "history11",
+      "path": "<PROJECT_ROOT>/phase130/labram_history11_seed43/model.pt",
+      "sha256": "da90904dfbb2b8e8ed3476996457d10ad61070377e03ae02b9683648f35b1893"
+    }
+  ],
+  "source_selector": [
+    7,
+    17,
+    27,
+    37
+  ],
+  "original_selector": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "source_audit_sha256": "dd25f433444954c5ccbe88e9aac0dd191a09860e6371f3e8475e44f86f6370b2",
+  "original_metric_hashes": {
+    "cbramod": "ec2a553a80c6677ad4690839172ca9824b0e8662a8ceaa533263fbf332e098f3",
+    "labram": "9072ba6bf6bc2fb51eea95855ed140441759a915788e12ed3ad41f2c40a8602a"
+  },
+  "primary": "For eachprespecifiedbackbone, oldSleepEDF30 native rawEMA.5: alternate-selectedhistory minusalternate-selectedrepeat. Reportboth; onlydescribe sharedrobustness ifbothpairedperson95percentileCIs lower>0. Samepeopleacrossbackbones, notindependentcohorts.",
+  "sensitivity": "Paired change inhistory-minus-repeat effect betweenalternateandoriginalselectors; samepersonbootstrap10000 RNG131017. Also absoluteheadperformance vsoriginalselectedhistory/frozenparent/teacher, andfixedexternal/EMAsecondaryresults.",
+  "scope": "Originalresults retained. Do notselectbettersourcevalidationgroup bytargetscore. Alltargets previouslyobserved; no newblindclaim, trainingrecipe or targetparameterupdates.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}

@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-06T08:10:41.319288+00:00",
+  "models": [
+    {
+      "seed": 17,
+      "parent": {
+        "model": "cbramod",
+        "seed": 17,
+        "path": "<PROJECT_ROOT>/phase66/pretrained_0.0001/model.pt",
+        "sha256": "a8071400b0bd5fd46d8f6f578b09c4deb8be7deaa34bc729bd7f282c2d6ef4e0"
+      },
+      "history_head": "<PROJECT_ROOT>/phase119/history11_seed17/model.pt",
+      "head_sha256": "50e06207049d96da09391e33a90e1c13b7c5b00d99785d64f24992e4a3b8266d",
+      "teacher": "<PROJECT_ROOT>/phase4/results/context11_mixed_17/model.pt",
+      "teacher_sha256": "69373f7f861eaf4971edd21acba7757cf80620fbdfe77dadbf8d5edc987d473c"
+    },
+    {
+      "seed": 29,
+      "parent": {
+        "model": "cbramod",
+        "seed": 29,
+        "path": "<PROJECT_ROOT>/phase71/seed29/pretrained_2e-05/model.pt",
+        "sha256": "0803214997f111e866ee3ca846e036cdcbf04553f6712719ce3099494b2e36e1"
+      },
+      "history_head": "<PROJECT_ROOT>/phase119/history11_seed29/model.pt",
+      "head_sha256": "b0698198019965110b35bb103c20967f305179839bac9e498f1401940a8008bd",
+      "teacher": "<PROJECT_ROOT>/phase4/results/context11_mixed_29/model.pt",
+      "teacher_sha256": "703356383ff75c857a93296597f4751b7b40e0536e61c8284d4aaf586e145484"
+    },
+    {
+      "seed": 43,
+      "parent": {
+        "model": "cbramod",
+        "seed": 43,
+        "path": "<PROJECT_ROOT>/phase71/seed43/pretrained_0.0001/model.pt",
+        "sha256": "53cf138516547ad02de1723f440714b618f55866e602c72d07338c2104283ca8"
+      },
+      "history_head": "<PROJECT_ROOT>/phase119/history11_seed43/model.pt",
+      "head_sha256": "332d84f195515e7e7feb0e0847d82787a76faa1f6c237bb7e5750fdd7bea9ffa",
+      "teacher": "<PROJECT_ROOT>/phase4/results/context11_mixed_43/model.pt",
+      "teacher_sha256": "52358332312190f3d250422d8a78e303a2989719193a6ef38d6d8f0ba0f4a74b"
+    }
+  ],
+  "controllers": [
+    7,
+    17,
+    27,
+    37
+  ],
+  "validation": [
+    5,
+    15,
+    25,
+    35
+  ],
+  "methods": [
+    "raw_entropy",
+    "history_entropy"
+  ],
+  "lrs": [
+    0.001,
+    0.01
+  ],
+  "primary": {
+    "method": "history_entropy",
+    "lr": 0.001
+  },
+  "method": "Cold singleWRITE of9600CBraModLNaffines; current compositeprediction emittedbeforeWRITE. Entropy ofcurrent wholehistoryclassifier or rawparent currentclassifier. Historyheadfrozen. Clipgradientnorm1, no other writes overfuture4windows. Secondary.01 doesnotreplaceprimary.",
+  "cache_semantics": "Pre-t history cachedunder originalparent. At t emitcurrentusing pre-WRITE logits (atstartup repeatcurrentforpadding; gradients throughduplicatedcurrent). AfterWRITE, retain allcached <=t logits exactly, append updatedparent logitsonlyasfuturewindowsarrive. Never retroactively recomputepastfeatures. Currentpastcacheforward andfuturelabel-freeprefix audited.",
+  "numeric_control": "Same5windowparentbatch before/after; futureKEEP builtwithbefore logitsin samecacheflow. ZeroWRITE replay mustmatch exactly toexclude batch-size numericalgains.",
+  "controls": "Frozen composite historyclassifier, same-seed directcontext11teacher, fixed .5composite/teacherblend. Teacherfutureoutputs forstatic scoringonly, neverloss.",
+  "gate": "Primarythree-seed metricmeanswithinperson: eachsourcegroup futureCE>0,>=3/4positivepeople,balancedCE>=0,corrected>=harmedandcorrected>0. Also compareCE/accuracy withdirectteacher andstaticblend. Noonline/targetupdates unlessseparatelaterprotocol; thisrun sourceonly.",
+  "scope": "Same64phase91sourcepulses/8knownpeople, no newblindclaims or labels. Sourcehistoryhead has extra30supervisedepochs. This is newentropyobjective on staticcausalclassifier, notextension of failedexternalteacherWRITEbranch.",
+  "cpu_ids": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "gpu": true
+}
